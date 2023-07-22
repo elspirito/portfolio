@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const Works = () => {
     return (
         <StyledWorks>
-            Works
+            <h2>Кейсы</h2>
+            <div>projects</div>
         </StyledWorks>
     );
 };
@@ -12,4 +13,5 @@ export const Works = () => {
 const StyledWorks = styled.section`
   height: 600px;
   background-color: #eee;
+  padding: 100px 200px;
 `

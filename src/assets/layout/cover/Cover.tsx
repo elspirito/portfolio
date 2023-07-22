@@ -10,6 +10,8 @@ export const Cover = () => {
                 <button>q123</button>
                 <button>q123</button>
             </div>
+
+
         </StyledCover>
     );
 };
@@ -18,4 +20,6 @@ const StyledCover = styled.section`
   background-color: #ddd;
   height: 600px;
   padding: 100px 200px;
+  
+}
 `

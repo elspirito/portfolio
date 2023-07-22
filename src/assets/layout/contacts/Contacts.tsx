@@ -4,7 +4,12 @@ import styled from "styled-components";
 export const Contacts = () => {
     return (
         <StyledContacts>
-            Contacts
+            <h2>Контакты</h2>
+            <StyledForm action="">
+                <input type="text" placeholder={"Ваше имя"}/>
+                <input type="text" placeholder={"Эл.почта"}/>
+                <textarea name="" id="" placeholder={"Текст сообщения..."}></textarea>
+            </StyledForm>
         </StyledContacts>
     );
 };
@@ -12,4 +17,10 @@ export const Contacts = () => {
 const StyledContacts = styled.section`
   height: 600px;
   background-color: #ddd;
+  padding: 100px 200px;
+`
+
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
 `

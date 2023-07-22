@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Reviews = () => {
     return (
         <StyledReviews>
-            Reviews
+            <h2>Отзывы клиентов</h2>
         </StyledReviews>
     );
 };
@@ -12,4 +12,5 @@ export const Reviews = () => {
 const StyledReviews = styled.section`
   height: 600px;
   background-color: #eee;
+  padding: 100px 200px;
 `
