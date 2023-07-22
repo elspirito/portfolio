@@ -14,8 +14,8 @@ export const Cover = () => {
     );
 };
 
-const StyledCover = styled.div`
+const StyledCover = styled.section`
   background-color: #ddd;
-  height: 800px;
+  height: 600px;
   padding: 100px 200px;
 `
