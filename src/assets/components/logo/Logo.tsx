@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
+import {Icon} from "../icon/Icon";
 
 export const Logo = () => {
     return (
         <StyledLogo>
-            <img src="" alt=""/>
+            <Icon iconId={"kitty"}/>
             <p>Савинов Артем</p>
         </StyledLogo>
     );
@@ -12,5 +13,6 @@ export const Logo = () => {
 
 const StyledLogo = styled.a`
   display: flex;
+  align-items: center;
 `
 
