@@ -17,5 +17,5 @@ const StyledHeader = styled.header`
   background-color: #eee;
   display: flex;
   justify-content: space-between;
-  padding: 100px 200px;
+  padding: 50px 200px;
 `
