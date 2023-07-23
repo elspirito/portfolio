@@ -18,4 +18,6 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction: row;
   gap: 40px;
+  align-items: center;
+  justify-content: center;
 `

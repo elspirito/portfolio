@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import {Tabs} from "../../components/tabs/Tabs";
+import {Work} from "./work/Work";
+import goodfinPreview from "../../images/projects/goodfin-preview.webp"
+import konsolPreview from "../../images/projects/konsol-preview.webp"
+import lucrosPreview from "../../images/projects/lucros-preview.webp"
+import sberPreview from "../../images/projects/sber-preview.webp"
+import shb2Preview from "../../images/projects/shb2-preview.webp"
+import shbPreview from "../../images/projects/shb-preview.webp"
 
 const tabsDataItems = ["Кейсы", "Визуал", "Разработка"]
 
@@ -8,13 +15,25 @@ export const Works = () => {
     return (
         <StyledWorks>
             <Tabs tabsData={tabsDataItems}/>
-            <div>projects</div>
+            <StyledWorksWrapper>
+                <Work src={goodfinPreview}/>
+                <Work src={konsolPreview}/>
+                <Work src={lucrosPreview}/>
+                <Work src={sberPreview}/>
+                <Work src={shb2Preview}/>
+                <Work src={shbPreview}/>
+            </StyledWorksWrapper>
         </StyledWorks>
     );
 };
 
 const StyledWorks = styled.section`
-  height: 600px;
-  background-color: #eee;
+  min-height: 600px;
+  background-color: #999;
   padding: 100px 200px;
+`
+const StyledWorksWrapper = styled.div`
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 `
