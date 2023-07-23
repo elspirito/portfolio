@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from "styled-components";
 import mapPath from "../../images/map.webp"
+import {SectionTitle} from "../../components/SectionTitle";
 
 export const Expirience = () => {
     return (
         <StyledExpirience>
             <div>
-                <h2>
+                <SectionTitle>
                     Более 10 лет опыта в области интерактивного дизайна и работы с талантливыми людьми в бизнесе
-                </h2>
+                </SectionTitle>
                <Pic src={mapPath}/>
             </div>
         </StyledExpirience>
@@ -16,8 +17,8 @@ export const Expirience = () => {
 };
 
 const StyledExpirience = styled.section`
-  height: 600px;
-  background-color: #ddd;
+  min-height: 600px;
+  background-color: #333;
   padding: 100px 200px;
   div {
     background-color: #181818;

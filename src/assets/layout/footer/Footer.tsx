@@ -12,11 +12,11 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  height: 300px;
-  background-color: #aaa;
+  min-height: 300px;
+  background-color: #555;
   padding: 100px 200px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 40px;
   align-items: center;
   justify-content: center;

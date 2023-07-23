@@ -8,13 +8,17 @@ import lucrosPreview from "../../images/projects/lucros-preview.webp"
 import sberPreview from "../../images/projects/sber-preview.webp"
 import shb2Preview from "../../images/projects/shb2-preview.webp"
 import shbPreview from "../../images/projects/shb-preview.webp"
+import {SectionTitle} from "../../components/SectionTitle";
 
 const tabsDataItems = ["Кейсы", "Визуал", "Разработка"]
 
 export const Works = () => {
     return (
         <StyledWorks>
-            <Tabs tabsData={tabsDataItems}/>
+            <SectionTitle>
+                <Tabs tabsData={tabsDataItems}/>
+            </SectionTitle>
+
             <StyledWorksWrapper>
                 <Work src={goodfinPreview}/>
                 <Work src={konsolPreview}/>
@@ -29,7 +33,7 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
   min-height: 600px;
-  background-color: #999;
+  background-color: #444;
   padding: 100px 200px;
 `
 const StyledWorksWrapper = styled.div`

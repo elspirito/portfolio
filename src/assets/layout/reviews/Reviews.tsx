@@ -2,11 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 import {Review} from "./review/Review";
 import {ReviewsTabs} from "./reviews-tabs/ReviewsTabs";
+import {SectionTitle} from "../../components/SectionTitle";
 
 export const Reviews = () => {
     return (
         <StyledReviews>
-            <h2>Отзывы клиентов</h2>
+            <SectionTitle>Отзывы клиентов</SectionTitle>
             <ReviewsTabs/>
             <Review/>
         </StyledReviews>
@@ -14,7 +15,7 @@ export const Reviews = () => {
 };
 
 const StyledReviews = styled.section`
-  height: 600px;
-  background-color: #999;
+  min-height: 600px;
+  background-color: #444;
   padding: 100px 200px;
 `

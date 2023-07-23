@@ -15,7 +15,7 @@ export const Stack = () => {
 };
 
 const StyledStack = styled.section`
-  background-color: #ddd;
+  background-color: #333;
   padding: 100px 200px;
   display: flex;
   justify-content: space-between;

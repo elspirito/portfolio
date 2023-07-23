@@ -13,6 +13,6 @@ export const Directions = () => {
 };
 
 const StyledDirections = styled.section`
-  background-color: #eee;
+  background-color: #333;
   padding: 100px 200px;
 `
