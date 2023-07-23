@@ -21,6 +21,7 @@ const StyledExpirience = styled.section`
   padding: 100px 200px;
   div {
     background-color: #181818;
+    overflow: hidden;
   }
 `
 

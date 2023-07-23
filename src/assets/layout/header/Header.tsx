@@ -3,12 +3,13 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
 
+const menuDataItems = ["Кейсы", "Опыт", "CV", "Отзывы", "Контакты"];
 
 export const Header = () => {
     return (
         <StyledHeader>
             <Logo/>
-            <Menu/>
+            <Menu menuData={menuDataItems}/>
         </StyledHeader>
     );
 };
