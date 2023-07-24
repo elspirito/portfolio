@@ -3,20 +3,20 @@ import styled from "styled-components";
 
 type WorkPropsType = {
     src: string
+    className?: string
 };
 
 export const Work = (props: WorkPropsType) => {
     return (
-        <StyledWork src={props.src}>
-
-        </StyledWork>
+        <StyledWork src={props.src} className={props.className}/>
     );
 };
 
 const StyledWork = styled.img`
   background-color: #333;
   min-height: 380px;
-  width: 30%;
   object-fit: cover;
+  overflow: hidden;
+  width: 100%;
 `
 

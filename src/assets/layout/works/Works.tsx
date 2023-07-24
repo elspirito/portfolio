@@ -20,13 +20,15 @@ export const Works = () => {
             </SectionTitle>
 
             <StyledWorksWrapper>
-                <Work src={goodfinPreview}/>
-                <Work src={konsolPreview}/>
-                <Work src={lucrosPreview}/>
-                <Work src={sberPreview}/>
-                <Work src={shb2Preview}/>
-                <Work src={shbPreview}/>
+                <Work src={goodfinPreview} className={"cell"}/>
+                <Work src={konsolPreview} className={"cell"}/>
+                <Work src={lucrosPreview} className={"cell"}/>
+                <Work src={sberPreview} className={"cell"}/>
+                <Work src={shb2Preview} className={"cell"}/>
+                <Work src={shbPreview} className={"cell"}/>
             </StyledWorksWrapper>
+            
+            <Paginator><span></span><span></span><span></span></Paginator>
         </StyledWorks>
     );
 };
@@ -37,7 +39,54 @@ const StyledWorks = styled.section`
   padding: 100px 200px;
 `
 const StyledWorksWrapper = styled.div`
-  display: flex;
   gap: 40px;
-  flex-wrap: wrap;
+  display: grid;
+  //grid-template-columns: 10% 20% 10% 20% 20%;
+  grid-template-areas:
+    "card1 card1 card1 card2 card2 card3 card3"
+    "card4 card4 card5 card5 card6 card6 card6";
+
+  .cell:nth-child(1) {
+    grid-area: card1;
+  }
+
+  .cell:nth-child(2) {
+    grid-area: card2;
+  }
+
+  .cell:nth-child(3) {
+    grid-area: card3;
+  }
+
+  .cell:nth-child(4) {
+    grid-area: card4;
+  }
+
+  .cell:nth-child(5) {
+    grid-area: card5;
+  }
+
+  .cell:nth-child(6) {
+    grid-area: card6;
+  }
 `
+
+const Paginator = styled.div `
+  display: flex;
+  gap: 16px;
+  margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+  
+  span {
+    width: 8px;
+    height: 8px;
+    background-color: #fafafa;
+    
+    &:nth-child(1) {
+      width: 24px;
+    }
+  }
+`
+
+

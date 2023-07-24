@@ -34,6 +34,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 40px;
 `
 const Field = styled.input`
   min-height: 80px;
