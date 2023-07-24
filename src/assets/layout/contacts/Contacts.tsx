@@ -11,8 +11,10 @@ export const Contacts = () => {
         <StyledContacts>
             <SectionTitle>Контакты</SectionTitle>
             <StyledForm action="">
-                <Field placeholder={"Ваше имя"}/>
-                <Field placeholder={"Эл.почта"}/>
+                <FlexWrapper gap={"40px"}>
+                    <Field placeholder={"Ваше имя"}/>
+                    <Field placeholder={"Эл.почта"}/>
+                </FlexWrapper>
                 <Field as={"textarea"} placeholder={"Текст сообщения..."}/>
                 <Button type={"submit"}>Отправить</Button>
             </StyledForm>
@@ -33,9 +35,10 @@ const StyledContacts = styled.section`
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
   margin-bottom: 40px;
 `
 const Field = styled.input`
   min-height: 80px;
+  width: 100%;
 `
