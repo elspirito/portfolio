@@ -13,7 +13,6 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   min-height: 300px;
-  background-color: #555;
   padding: 100px 200px;
   display: flex;
   flex-direction: column;

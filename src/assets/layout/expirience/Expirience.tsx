@@ -10,7 +10,7 @@ export const Expirience = () => {
                 <SectionTitle>
                     Более 10 лет опыта в области интерактивного дизайна и работы с талантливыми людьми в бизнесе
                 </SectionTitle>
-               <Pic src={mapPath}/>
+                <Pic src={mapPath}/>
             </div>
         </StyledExpirience>
     );
@@ -18,8 +18,8 @@ export const Expirience = () => {
 
 const StyledExpirience = styled.section`
   min-height: 600px;
-  background-color: #333;
   padding: 100px 200px;
+
   div {
     background-color: #181818;
     overflow: hidden;

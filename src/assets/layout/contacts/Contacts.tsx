@@ -28,7 +28,6 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
-  background-color: #333;
   padding: 100px 200px;
 `
 

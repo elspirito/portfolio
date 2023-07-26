@@ -49,7 +49,6 @@ export const Reviews = () => {
 
 const StyledReviews = styled.section`
   min-height: 600px;
-  background-color: #444;
   padding: 100px 200px;
 `
 

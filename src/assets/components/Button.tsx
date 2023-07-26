@@ -7,8 +7,13 @@ export const Button = styled.button`
   color: #fafafa;
   font-size: 24px;
   border: none;
+  font-weight: 900;
   
   &:hover {
     cursor: pointer;
+  }
+  
+  &:active {
+    
   }
 `

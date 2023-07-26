@@ -35,7 +35,6 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
   min-height: 600px;
-  background-color: #444;
   padding: 100px 200px;
 `
 const StyledWorksWrapper = styled.div`
@@ -81,7 +80,6 @@ const Paginator = styled.div `
   span {
     width: 8px;
     height: 8px;
-    background-color: #fafafa;
     
     &:nth-child(1) {
       width: 24px;

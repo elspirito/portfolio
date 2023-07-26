@@ -22,7 +22,6 @@ export const Cover = () => {
 };
 
 const StyledCover = styled.section`
-  background-color: #444;
   min-height: 600px;
   padding: 100px 200px;
 `
