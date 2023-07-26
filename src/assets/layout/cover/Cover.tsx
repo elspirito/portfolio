@@ -22,8 +22,11 @@ export const Cover = () => {
 };
 
 const StyledCover = styled.section`
-  min-height: 600px;
+  min-height: 90vh;
   padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 const CoverTitle = styled.h1`
   color: #fafafa;

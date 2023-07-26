@@ -23,6 +23,8 @@ const StyledExpirience = styled.section`
   div {
     background-color: #181818;
     overflow: hidden;
+    padding: 40px;
+    border-radius: 24px;
   }
 `
 

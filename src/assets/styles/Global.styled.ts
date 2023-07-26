@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme";
 
 export const GlobalStyle = createGlobalStyle `
 
@@ -17,21 +18,37 @@ export const GlobalStyle = createGlobalStyle `
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fafafa;
+    color: ${theme.dark.colors.fontPrimary};
     font-size: 24px;
-    background-color: #212121;
+    background-color: ${theme.dark.colors.primaryBg};
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.025em;
   }
   
   p {
-    color: #888;
+    color: ${theme.dark.colors.fontSecondary};
   }
   
   a {
-    color: #fafafa;
+    color: ${theme.dark.colors.fontPrimary};
     text-decoration: none;
   }
 
   li {
    list-style: none;
+  }
+  
+  button {
+    border-radius: 999px;
+    padding: 0px 40px;
+    min-height: 80px;
+  }
+  
+  input, textarea {
+    background-color: ${theme.dark.colors.primaryBg};
+    border: unset;
+    border-bottom: 1px solid #f00;
   }
 `
