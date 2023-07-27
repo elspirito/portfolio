@@ -12,8 +12,8 @@ export const Cover = () => {
             <p>— Ориентируюсь на создание высококачественных и впечатляющих цифровых продуктов</p>
 
             <FlexWrapper gap={"40px"}>
-                <Button>Подробнее</Button>
-                <Button>Обсудить проект</Button>
+                <Button label={"Поподробнее?"}/>
+                <Button label={"Обсудить проект"}/>
             </FlexWrapper>
 
             <Deer src={deer}/>

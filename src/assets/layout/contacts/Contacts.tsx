@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {SectionTitle} from "../../components/SectionTitle";
 import {Button} from "../../components/Button";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {SocialButton} from "./social-button/SocialButton";
 
 
 export const Contacts = () => {
@@ -16,12 +15,12 @@ export const Contacts = () => {
                     <Field placeholder={"Эл.почта"}/>
                 </FlexWrapper>
                 <Field as={"textarea"} placeholder={"Текст сообщения..."}/>
-                <Button type={"submit"}>Отправить</Button>
+                <Button label={"Отправить"}/>
             </StyledForm>
             <FlexWrapper gap={"40px"}>
-                <SocialButton iconId={"tg"} socialLink={"231"}/>
-                <SocialButton iconId={"vk"} socialLink={"231321"}/>
-                <SocialButton iconId={"github"} socialLink={"2312312"}/>
+                <Button label={"el_spirito"} icon={"tg"}/>
+                <Button label={"el_spirito"} icon={"vk"}/>
+                <Button label={"el_spirito"} icon={"github"}/>
             </FlexWrapper>
         </StyledContacts>
     );

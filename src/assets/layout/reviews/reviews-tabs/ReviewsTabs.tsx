@@ -21,6 +21,7 @@ export const ReviewsTabs = (props: { author: Array<object> }) => {
 
 const StyledReviewTabs = styled.div`
   display: flex;
+  margin-bottom: 40px;
 `
 
 const ReviewTab = styled.div`
@@ -28,7 +29,7 @@ const ReviewTab = styled.div`
   padding: 8px 40px 8px 8px;
   margin-right: 24px;
   color: #fafafa;
-  border-radius: 24px;
+  border-radius: 999px;
   display: flex;
   gap: 8px;
   align-items: center;
