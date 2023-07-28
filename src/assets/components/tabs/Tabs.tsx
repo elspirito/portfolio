@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 export const Tabs = (props: { tabsData: Array<string> }) => {
     return (
@@ -23,5 +24,14 @@ const StyledTabs = styled.nav`
   ul {
     display: flex;
     gap: 32px;
+  }
+  a {
+    font-size: 64px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    
+    &:hover {
+      color: ${theme.dark.colors.accent};
+    }
   }
 `

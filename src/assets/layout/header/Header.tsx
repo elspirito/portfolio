@@ -2,20 +2,24 @@ import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
+import {ContainerWrapper} from "../../components/ContainerWrapper";
+import {FlexWrapper} from "../../components/FlexWrapper";
 
 const menuDataItems = ["Кейсы", "Опыт", "CV", "Отзывы", "Контакты"];
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
-            <Menu menuData={menuDataItems}/>
+            <ContainerWrapper>
+                <FlexWrapper direction={"row"} justify={"space-between"}>
+                    <Logo/>
+                    <Menu menuData={menuDataItems}/>
+                </FlexWrapper>
+            </ContainerWrapper>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 200px;
+    padding: 50px 0;
 `

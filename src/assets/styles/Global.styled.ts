@@ -1,7 +1,7 @@
 import {createGlobalStyle} from "styled-components";
 import {theme} from "./Theme";
 
-export const GlobalStyle = createGlobalStyle `
+export const GlobalStyle = createGlobalStyle`
 
   *,
   *::before,
@@ -23,30 +23,34 @@ export const GlobalStyle = createGlobalStyle `
     line-height: 1.6;
     background-color: ${theme.dark.colors.primaryBg};
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.025em;
   }
-  
+
+  section {
+    padding: 100px 0;
+  }
+
   p {
     color: ${theme.dark.colors.fontSecondary};
   }
-  
+
   a {
     color: ${theme.dark.colors.fontPrimary};
     text-decoration: none;
   }
 
   li {
-   list-style: none;
+    list-style: none;
   }
-  
+
   button {
     border-radius: 999px;
     padding: 0px 40px;
     min-height: 80px;
   }
-  
+
   input, textarea {
     background-color: ${theme.dark.colors.primaryBg};
     border: unset;

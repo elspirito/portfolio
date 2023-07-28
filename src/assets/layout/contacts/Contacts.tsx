@@ -1,33 +1,35 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../components/SectionTitle";
-import {Button} from "../../components/Button";
+import {Button} from "../../components/button/Button";
 import {FlexWrapper} from "../../components/FlexWrapper";
-
+import {ContainerWrapper} from "../../components/ContainerWrapper";
 
 export const Contacts = () => {
     return (
         <StyledContacts>
-            <SectionTitle>Контакты</SectionTitle>
-            <StyledForm action="">
+            <ContainerWrapper>
+                <SectionTitle>Контакты</SectionTitle>
+                <StyledForm action="">
+                    <FlexWrapper gap={"40px"}>
+                        <Field placeholder={"Ваше имя"}/>
+                        <Field placeholder={"Эл.почта"}/>
+                    </FlexWrapper>
+                    <Field as={"textarea"} placeholder={"Текст сообщения..."}/>
+                    <Button label={"Отправить"}/>
+                </StyledForm>
                 <FlexWrapper gap={"40px"}>
-                    <Field placeholder={"Ваше имя"}/>
-                    <Field placeholder={"Эл.почта"}/>
+                    <Button label={"el_spirito"} icon={"tg"}/>
+                    <Button label={"el_spirito"} icon={"vk"}/>
+                    <Button label={"el_spirito"} icon={"github"}/>
                 </FlexWrapper>
-                <Field as={"textarea"} placeholder={"Текст сообщения..."}/>
-                <Button label={"Отправить"}/>
-            </StyledForm>
-            <FlexWrapper gap={"40px"}>
-                <Button label={"el_spirito"} icon={"tg"}/>
-                <Button label={"el_spirito"} icon={"vk"}/>
-                <Button label={"el_spirito"} icon={"github"}/>
-            </FlexWrapper>
+            </ContainerWrapper>
         </StyledContacts>
     );
 };
 
 const StyledContacts = styled.section`
-  padding: 100px 200px;
+
 `
 
 const StyledForm = styled.form`

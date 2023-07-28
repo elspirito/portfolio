@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import mapPath from "../../images/map.webp"
 import {SectionTitle} from "../../components/SectionTitle";
+import {theme} from "../../styles/Theme";
 
 export const Expirience = () => {
     return (
@@ -17,14 +18,14 @@ export const Expirience = () => {
 };
 
 const StyledExpirience = styled.section`
-  min-height: 600px;
-  padding: 100px 200px;
 
   div {
-    background-color: #181818;
+    background-color: ${theme.dark.colors.secondaryBg};
     overflow: hidden;
     padding: 40px;
     border-radius: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 `
 

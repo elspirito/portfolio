@@ -8,34 +8,38 @@ import lucrosPreview from "../../images/projects/lucros-preview.webp"
 import sberPreview from "../../images/projects/sber-preview.webp"
 import shb2Preview from "../../images/projects/shb2-preview.webp"
 import shbPreview from "../../images/projects/shb-preview.webp"
-import {SectionTitle} from "../../components/SectionTitle";
+import {ContainerWrapper} from "../../components/ContainerWrapper";
+import {Button} from "../../components/button/Button";
+import {FlexWrapper} from "../../components/FlexWrapper";
 
 const tabsDataItems = ["Кейсы", "Визуал", "Разработка"]
 
 export const Works = () => {
     return (
         <StyledWorks>
-            <SectionTitle>
-                <Tabs tabsData={tabsDataItems}/>
-            </SectionTitle>
+            <ContainerWrapper>
+                <WorkTabsWrapper>
+                    <Tabs tabsData={tabsDataItems}/>
+                    <Button label={"Все"}/>
+                </WorkTabsWrapper>
 
-            <StyledWorksWrapper>
-                <Work src={goodfinPreview} className={"cell"}/>
-                <Work src={konsolPreview} className={"cell"}/>
-                <Work src={lucrosPreview} className={"cell"}/>
-                <Work src={sberPreview} className={"cell"}/>
-                <Work src={shb2Preview} className={"cell"}/>
-                <Work src={shbPreview} className={"cell"}/>
-            </StyledWorksWrapper>
-            
-            <Paginator><span></span><span></span><span></span></Paginator>
+                <StyledWorksWrapper>
+                    <Work src={goodfinPreview} className={"cell"}/>
+                    <Work src={konsolPreview} className={"cell"}/>
+                    <Work src={lucrosPreview} className={"cell"}/>
+                    <Work src={sberPreview} className={"cell"}/>
+                    <Work src={shb2Preview} className={"cell"}/>
+                    <Work src={shbPreview} className={"cell"}/>
+                </StyledWorksWrapper>
+
+                <Paginator><span></span><span></span><span></span></Paginator>
+            </ContainerWrapper>
         </StyledWorks>
     );
 };
 
 const StyledWorks = styled.section`
-  min-height: 600px;
-  padding: 100px 200px;
+  padding: 100px 0;
 `
 const StyledWorksWrapper = styled.div`
   gap: 40px;
@@ -70,17 +74,24 @@ const StyledWorksWrapper = styled.div`
   }
 `
 
-const Paginator = styled.div `
+const WorkTabsWrapper = styled.div`
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+`
+
+const Paginator = styled.div`
   display: flex;
   gap: 16px;
   margin: 40px 0;
   align-items: center;
   justify-content: center;
-  
+
   span {
     width: 8px;
     height: 8px;
-    
+
     &:nth-child(1) {
       width: 24px;
     }

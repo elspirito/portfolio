@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../styles/Theme";
-import {Icon} from "./icon/Icon";
+import {theme} from "../../styles/Theme";
+import {Icon} from "../icon/Icon";
 
 type ButtonPropsType = {
     icon?: string
@@ -23,6 +23,11 @@ const StyledButton = styled.button`
   font-size: 24px;
   border: none;
   font-weight: 900;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
 
   &:hover {
     cursor: pointer;

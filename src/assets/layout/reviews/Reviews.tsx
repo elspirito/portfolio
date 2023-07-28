@@ -7,6 +7,7 @@ import ava2 from "../../images/reviews/ava2.webp";
 import ava3 from "../../images/reviews/ava3.webp";
 import ava4 from "../../images/reviews/ava4.webp";
 import ava5 from "../../images/reviews/ava5.webp";
+import {ContainerWrapper} from "../../components/ContainerWrapper";
 
 const reviewAuthor = [
     {
@@ -34,22 +35,22 @@ const reviewAuthor = [
 export const Reviews = () => {
     return (
         <StyledReviews>
-            <SectionTitle>Отзывы клиентов</SectionTitle>
-            <ReviewsTabs author={reviewAuthor}/>
-            <Review>
-                Балабоба демонстрирует, как с помощью нейросетей семейства YaLM можно продолжать тексты на любую тему,
-                сохраняя связность и заданный стиль. В основе Балабобы лежит первая версия YaLM, которая была
-                разработана в 2021 году для Поиска и Алисы. Подробнее можно почитать тут
-                У Балабобы нет своего мнения или знания. Он умеет только подражать — писать тексты так, чтобы они были
-                максимально похожи на реальные тексты из интернета.
-            </Review>
+            <ContainerWrapper>
+                <SectionTitle>Отзывы клиентов</SectionTitle>
+                <ReviewsTabs author={reviewAuthor}/>
+                <Review>
+                    Балабоба демонстрирует, как с помощью нейросетей семейства YaLM можно продолжать тексты на любую тему,
+                    сохраняя связность и заданный стиль. В основе Балабобы лежит первая версия YaLM, которая была
+                    разработана в 2021 году для Поиска и Алисы. Подробнее можно почитать тут
+                    У Балабобы нет своего мнения или знания. Он умеет только подражать — писать тексты так, чтобы они были
+                    максимально похожи на реальные тексты из интернета.
+                </Review>
+            </ContainerWrapper>
         </StyledReviews>
     );
 };
 
 const StyledReviews = styled.section`
-  min-height: 600px;
-  padding: 100px 200px;
 `
 
 const Review = styled.p`
