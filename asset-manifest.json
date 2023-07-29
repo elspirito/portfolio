@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/portfolio/static/js/main.9c70139d.js",
+    "main.js": "/portfolio/static/js/main.9cdd3453.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/shb-preview.webp": "/portfolio/static/media/shb-preview.497ac77e754a77a5cf85.webp",
     "static/media/shb2-preview.webp": "/portfolio/static/media/shb2-preview.0acd13c0c9dd700f320b.webp",
     "static/media/lucros-preview.webp": "/portfolio/static/media/lucros-preview.ea0b6dae1bda1feaf2de.webp",
     "static/media/goodfin-preview.webp": "/portfolio/static/media/goodfin-preview.58ffb7e2dd61ce039e50.webp",
     "static/media/konsol-preview.webp": "/portfolio/static/media/konsol-preview.635769cecd5e5f56624c.webp",
-    "static/media/deer.webp": "/portfolio/static/media/deer.6d6d9813315db5151247.webp",
     "static/media/sber-preview.webp": "/portfolio/static/media/sber-preview.ba156a9bf65c91ba5808.webp",
     "static/media/ava2.webp": "/portfolio/static/media/ava2.03ee24dc18f8efda846e.webp",
     "static/media/map.webp": "/portfolio/static/media/map.146efb9b61d522e77a22.webp",
@@ -18,11 +17,11 @@
     "static/media/ava3.webp": "/portfolio/static/media/ava3.68af1904774133826a9b.webp",
     "static/media/ava5.webp": "/portfolio/static/media/ava5.5cc095e580dcf9ae4d15.webp",
     "index.html": "/portfolio/index.html",
-    "main.9c70139d.js.map": "/portfolio/static/js/main.9c70139d.js.map",
+    "main.9cdd3453.js.map": "/portfolio/static/js/main.9cdd3453.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.9c70139d.js"
+    "static/js/main.9cdd3453.js"
   ]
 }
