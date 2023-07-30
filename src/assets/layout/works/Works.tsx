@@ -75,7 +75,7 @@ const StyledWorksWrapper = styled.div`
 `
 
 const WorkTabsWrapper = styled.div`
-  margin-bottom: 40px;
+  margin-bottom: 64px;
   display: flex;
   align-items: center;
   gap: 40px;

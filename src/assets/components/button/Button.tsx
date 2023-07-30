@@ -28,7 +28,7 @@ const StyledButton = styled.button<StyledButtonPropsType>`
   background-color: ${(props) => {
     switch (props.styledVariant) {
       case "primary":
-        return theme.colors.dark.accent;
+        return theme.colors.dark.accent.base;
         break;
       case "secondary":
         return "transparent";
@@ -44,7 +44,7 @@ const StyledButton = styled.button<StyledButtonPropsType>`
         return "transparent";
         break;
       case "secondary":
-        return theme.colors.dark.accent;
+        return theme.colors.dark.accent.base;
         break;
       default:
         return "transparent";
@@ -61,6 +61,7 @@ const StyledButton = styled.button<StyledButtonPropsType>`
 
   &:hover {
     cursor: pointer;
+    background-color: ${theme.colors.dark.accent.hover};
   }
 `
 const Label = styled.label`

@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from "styled-components";
 import avatar from "../../images/avatar.webp"
+import {theme} from "../../styles/Theme";
 
 export const Logo = () => {
     return (
-        <StyledLogo>
+        <StyledLogo href={"/"}>
             <Avatar src={avatar}/>
             <NameWrapper>
                 <Disclaimer>
-                    <p>Дизайнер</p>
-                    <p>Разработчик</p>
-                    <p>Фантазер</p>
+                    <small>Дизайнер</small>
+                    <small>Разработчик</small>
+                    <small>Фантазер</small>
                 </Disclaimer>
                 <Name>
                     Савинов Артем
@@ -24,6 +25,10 @@ const StyledLogo = styled.a`
   display: flex;
   align-items: center;
   gap: 24px;
+
+  &:hover {
+    color: ${theme.colors.dark.accent.base};
+  }
 `
 
 const Avatar = styled.img`
@@ -33,7 +38,9 @@ const Avatar = styled.img`
 `
 
 const NameWrapper = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 `
 
 const Name = styled.h3`
@@ -43,8 +50,11 @@ const Name = styled.h3`
 const Disclaimer = styled.div`
   display: flex;
   gap: 8px;
-  p {
+
+  small {
     font-size: 12px;
+    font-weight: 300;
+    opacity: 0.5;;
   }
 `
 

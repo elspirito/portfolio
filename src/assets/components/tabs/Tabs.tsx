@@ -31,7 +31,7 @@ const StyledTabs = styled.nav`
     font-weight: 900;
     
     &:hover {
-      color: ${theme.colors.dark.accent};
+      color: ${theme.colors.dark.accent.base};
     }
   }
 `

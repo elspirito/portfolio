@@ -10,6 +10,15 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  
+  *:focus {
+    outline: 0;
+  }
+  
+  *:focus-visible {
+    outline: 4px solid ${theme.colors.dark.accent.hover};
+    border-radius: 999px;
+  }
 
   body {
     margin: 0;
@@ -22,7 +31,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 24px;
     background-color: ${theme.colors.dark.primaryBg};
     font-weight: 1000;
-    
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -58,6 +66,11 @@ export const GlobalStyle = createGlobalStyle`
   input, textarea {
     background-color: ${theme.colors.dark.primaryBg};
     border: unset;
-    border-bottom: 1px solid #f00;
+    border-bottom: 1px solid ${theme.colors.dark.fontSecondary};
+    color: #fff;
+
+    &:focus {
+      border-radius: 8px;
+    }
   }
 `
