@@ -16,12 +16,12 @@ export const Contacts = () => {
                         <Field placeholder={"Эл.почта"}/>
                     </FlexWrapper>
                     <Field as={"textarea"} placeholder={"Текст сообщения..."}/>
-                    <Button label={"Отправить"}/>
+                    <Button variant={"primary"} label={"Отправить"}/>
                 </StyledForm>
                 <FlexWrapper gap={"40px"}>
-                    <Button label={"el_spirito"} iconLeft={"tg"}/>
-                    <Button label={"el_spirito"} iconLeft={"vk"}/>
-                    <Button label={"el_spirito"} iconLeft={"github"}/>
+                    <Button variant={"tertirary"} label={"el_spirito_santo"} iconLeft={"tg"}/>
+                    <Button variant={"tertirary"} label={"el_spirito"} iconLeft={"vk"}/>
+                    <Button variant={"tertirary"} label={"el_spirito"} iconLeft={"github"}/>
                 </FlexWrapper>
             </ContainerWrapper>
         </StyledContacts>

@@ -21,8 +21,8 @@ export const Cover = () => {
                     </CoverDescription>
 
                     <FlexWrapper gap={"40px"}>
-                        <Button label={"Поподробнее?"}/>
-                        <Button label={"Обсудить проект"}/>
+                        <Button variant={"primary"} label={"Поподробнее?"}/>
+                        <Button variant={"secondary"} label={"Обсудить проект"}/>
                     </FlexWrapper>
                 </CoverMain>
             </ContainerWrapper>

@@ -16,7 +16,7 @@ type StyledButtonPropsType = {
 
 export const Button = (props: ButtonPropsType) => {
     return (
-        <StyledButton>
+        <StyledButton styledVariant={props.variant}>
             {props.iconLeft && <Icon iconId={props.iconLeft}/>}
             <Label>{props.label}</Label>
             {props.iconRight && <Icon iconId={props.iconRight}/>}
@@ -25,10 +25,34 @@ export const Button = (props: ButtonPropsType) => {
 };
 
 const StyledButton = styled.button<StyledButtonPropsType>`
-  background-color: ${theme.colors.dark.accent};
+  background-color: ${(props) => {
+    switch (props.styledVariant) {
+      case "primary":
+        return theme.colors.dark.accent;
+        break;
+      case "secondary":
+        return "transparent";
+        break;
+      default:
+        return theme.colors.dark.secondaryBg;
+        break;
+    }
+  }};
+  border: 2px solid ${(props) => {
+    switch (props.styledVariant) {
+      case "primary":
+        return "transparent";
+        break;
+      case "secondary":
+        return theme.colors.dark.accent;
+        break;
+      default:
+        return "transparent";
+        break;
+    }
+  }};
   color: #fafafa;
   font-size: 24px;
-  border: none;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -39,7 +63,5 @@ const StyledButton = styled.button<StyledButtonPropsType>`
     cursor: pointer;
   }
 `
-const Label = styled.span`
-  font-variation-settings: 'wght' 1000;
-  font-variation-settings: 'opsz' 144;
+const Label = styled.label`
 `
