@@ -6,5 +6,4 @@ export const ContainerWrapper = styled.div`
   width: 100%;
   padding: 0  16px;
   margin: 0 auto;
-  outline: 1px solid red;
 `

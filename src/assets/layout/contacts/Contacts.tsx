@@ -19,9 +19,9 @@ export const Contacts = () => {
                     <Button label={"Отправить"}/>
                 </StyledForm>
                 <FlexWrapper gap={"40px"}>
-                    <Button label={"el_spirito"} icon={"tg"}/>
-                    <Button label={"el_spirito"} icon={"vk"}/>
-                    <Button label={"el_spirito"} icon={"github"}/>
+                    <Button label={"el_spirito"} iconLeft={"tg"}/>
+                    <Button label={"el_spirito"} iconLeft={"vk"}/>
+                    <Button label={"el_spirito"} iconLeft={"github"}/>
                 </FlexWrapper>
             </ContainerWrapper>
         </StyledContacts>

@@ -9,7 +9,9 @@ export const Expirience = () => {
         <StyledExpirience>
             <div>
                 <SectionTitle>
-                    Более 10 лет опыта в области интерактивного дизайна и работы с талантливыми людьми в бизнесе
+                    Балабоба был создан в 2021 году для демонстрации
+                    возможностей первой версии языковой модели YaLM
+                    (Yet another Language Model).
                 </SectionTitle>
                 <Pic src={mapPath}/>
             </div>
@@ -20,7 +22,7 @@ export const Expirience = () => {
 const StyledExpirience = styled.section`
 
   div {
-    background-color: ${theme.dark.colors.secondaryBg};
+    background-color: ${theme.colors.dark.secondaryBg};
     overflow: hidden;
     padding: 40px;
     border-radius: 24px;

@@ -9,22 +9,22 @@ export const Cover = () => {
     return (
         <StyledCover>
             <ContainerWrapper>
-                <FlexWrapper direction={"column"} justify={"space-between"} align={"flex-start"}>
-
+                <CoverMain>
                     <CoverTitle>
                         Дизайнер <span>разнорабочий</span>
                     </CoverTitle>
 
                     <CoverDescription>
-                        — Ориентируюсь на создание высококачественных и впечатляющих цифровых продуктов
+                        Балабоба был создан в 2021 году для демонстрации
+                        возможностей первой версии языковой модели YaLM
+                        (Yet another Language Model).
                     </CoverDescription>
 
                     <FlexWrapper gap={"40px"}>
                         <Button label={"Поподробнее?"}/>
                         <Button label={"Обсудить проект"}/>
                     </FlexWrapper>
-
-                </FlexWrapper>
+                </CoverMain>
             </ContainerWrapper>
             <Deer src={deer}/>
         </StyledCover>
@@ -33,12 +33,17 @@ export const Cover = () => {
 
 const StyledCover = styled.section`
   min-height: 80vh;
-  border: 1px solid violet;
-  padding: 0;
+  padding-bottom: 0;
 `
+
+const CoverMain = styled.div`
+
+`
+
 const CoverTitle = styled.h1`
   color: #fafafa;
-  font-size: 120px;
+  font-size: 128px;
+  margin-bottom: 40px;
 
   span {
     display: block;
@@ -46,14 +51,15 @@ const CoverTitle = styled.h1`
   }
 `
 const CoverDescription = styled.p`
-
+  margin-bottom: 120px;
 `
 
 const Deer = styled.img`
-  height: 400px;
+  height: 42vh;
+  width: 33vw;
   position: absolute;
   border-radius: 999px 0 0 999px;
-  top: 300px;
+  top: 200px;
   right: 0;
   z-index: -1;
   object-fit: none;

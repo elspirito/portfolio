@@ -3,42 +3,51 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {Icon} from "../../components/icon/Icon";
+import {theme} from "../../styles/Theme";
 
 export const Stack = () => {
     return (
-        <StyledDirections>
+        <StyledStack>
             <ContainerWrapper>
-                <FlexWrapper gap={"40px"}>
-                    <BigText>UIX</BigText>
-                    <BigText>3D</BigText>
-                </FlexWrapper>
-                <BigText>Front-end</BigText>
-                <BigText>Motion</BigText>
 
-                <StyledStack>
-                    <ContainerWrapper>
-                        <Icon iconId={"figma"} width={"120"} height={"120"}/>
-                        <Icon iconId={"html"} width={"120"} height={"120"}/>
-                        <Icon iconId={"css"} width={"120"} height={"120"}/>
-                        <Icon iconId={"sass"} width={"120"} height={"120"}/>
-                        <Icon iconId={"react"} width={"120"} height={"120"}/>
-                    </ContainerWrapper>
-                </StyledStack>
+                <Directions>
+                    <FlexWrapper gap={"40px"}>
+                        <BigText>UIX</BigText>
+                        <BigText>3D</BigText>
+                    </FlexWrapper>
+                    <BigText>Front-end</BigText>
+                    <BigText>Motion</BigText>
+                </Directions>
+
+                <StackIcons>
+                    <Icon iconId={"figma"} width={"120"} height={"120"}/>
+                    <Icon iconId={"html"} width={"120"} height={"120"}/>
+                    <Icon iconId={"css"} width={"120"} height={"120"}/>
+                    <Icon iconId={"sass"} width={"120"} height={"120"}/>
+                    <Icon iconId={"react"} width={"120"} height={"120"}/>
+                </StackIcons>
+
             </ContainerWrapper>
-        </StyledDirections>
+        </StyledStack>
     );
 };
 
-const StyledDirections = styled.section`
-  padding: 100px 200px;
+const StyledStack = styled.section`
+`
+const Directions = styled.div`
+  border-bottom: 1px splid ${theme.colors.dark.fontSecondary};
 `
 
-const BigText = styled.p`
-  font-size: 196px;
-  font-weight: 900;
+const BigText = styled.h6`
+  font-size: 175px;
+  font-variation-settings: 'wght' 1000;
   text-transform: uppercase;
+  text-align: right;
+  color: #333;
 `
-const StyledStack = styled.div`
+
+const StackIcons = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 80px 0;
 `

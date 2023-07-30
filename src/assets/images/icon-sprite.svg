@@ -12,11 +12,11 @@
             </clipPath>
         </defs>
     </g>
-    <g id="arrowLeft">
+    <g id="arrow-left">
         <path fill="#000" d="M7.825 13H20v-2H7.825l5.6-5.6L12 4l-8 8 8 8 1.425-1.4-5.6-5.6Z"/>
     </g>
 
-    <g id="arrowRight">
+    <g id="arrow-right">
         <path fill="#000" d="M16.175 13H4v-2h12.175l-5.6-5.6L12 4l8 8-8 8-1.425-1.4 5.6-5.6Z"/>
     </g>
 

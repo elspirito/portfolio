@@ -20,7 +20,7 @@ export const Works = () => {
             <ContainerWrapper>
                 <WorkTabsWrapper>
                     <Tabs tabsData={tabsDataItems}/>
-                    <Button label={"Все"}/>
+                    <Button label={"Все"} iconRight={"arrow-right"}/>
                 </WorkTabsWrapper>
 
                 <StyledWorksWrapper>

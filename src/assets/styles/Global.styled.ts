@@ -18,26 +18,30 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: ${theme.dark.colors.fontPrimary};
+    color: ${theme.colors.dark.fontPrimary};
     font-size: 24px;
-    line-height: 1.6;
-    background-color: ${theme.dark.colors.primaryBg};
+    background-color: ${theme.colors.dark.primaryBg};
+    font-weight: 1000;
+    
   }
 
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.025em;
+    line-height: 1.2;
   }
 
   section {
-    padding: 100px 0;
+    padding: 120px 0;
   }
 
   p {
-    color: ${theme.dark.colors.fontSecondary};
+    color: ${theme.colors.dark.fontSecondary};
+    line-height: 1.6;
+    font-variation-settings: 'wght' 300;
   }
 
   a {
-    color: ${theme.dark.colors.fontPrimary};
+    color: ${theme.colors.dark.fontPrimary};
     text-decoration: none;
   }
 
@@ -52,7 +56,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   input, textarea {
-    background-color: ${theme.dark.colors.primaryBg};
+    background-color: ${theme.colors.dark.primaryBg};
     border: unset;
     border-bottom: 1px solid #f00;
   }
