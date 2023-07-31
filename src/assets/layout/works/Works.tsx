@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Tabs} from "../../components/tabs/Tabs";
 import {Work} from "./work/Work";
-import goodfinPreview from "../../images/projects/goodfin-preview.webp"
+import gfPreview from "../../images/projects/gf-preview.webp"
 import konsolPreview from "../../images/projects/konsol-preview.webp"
 import lucrosPreview from "../../images/projects/lucros-preview.webp"
 import sberPreview from "../../images/projects/sber-preview.webp"
@@ -10,7 +10,6 @@ import shb2Preview from "../../images/projects/shb2-preview.webp"
 import shbPreview from "../../images/projects/shb-preview.webp"
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {Button} from "../../components/button/Button";
-import {FlexWrapper} from "../../components/FlexWrapper";
 
 const tabsDataItems = ["Кейсы", "Визуал", "Разработка"]
 
@@ -24,7 +23,7 @@ export const Works = () => {
                 </WorkTabsWrapper>
 
                 <StyledWorksWrapper>
-                    <Work src={goodfinPreview} className={"cell"}/>
+                    <Work src={gfPreview} className={"cell"}/>
                     <Work src={konsolPreview} className={"cell"}/>
                     <Work src={lucrosPreview} className={"cell"}/>
                     <Work src={sberPreview} className={"cell"}/>
