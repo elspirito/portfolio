@@ -8,6 +8,7 @@ import ava3 from "../../images/reviews/ava3.webp";
 import ava4 from "../../images/reviews/ava4.webp";
 import ava5 from "../../images/reviews/ava5.webp";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
+import {theme} from "../../styles/Theme";
 
 const reviewAuthor = [
     {
@@ -54,5 +55,6 @@ const StyledReviews = styled.section`
 `
 
 const Review = styled.p`
-
+  border-bottom: 2px solid ${theme.colors.dark.tertiaryBg};
+  padding-bottom: 100px;
 `

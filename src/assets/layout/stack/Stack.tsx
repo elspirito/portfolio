@@ -35,7 +35,7 @@ export const Stack = () => {
 const StyledStack = styled.section`
 `
 const Directions = styled.div`
-  border-bottom: 1px solid ${theme.colors.dark.tertiaryBg};
+  border-bottom: 2px solid ${theme.colors.dark.tertiaryBg};
   padding-bottom: 100px;
   margin-bottom: 100px;
 `

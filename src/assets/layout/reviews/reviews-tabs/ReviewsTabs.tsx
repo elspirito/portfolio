@@ -21,18 +21,20 @@ export const ReviewsTabs = (props: { author: Array<object> }) => {
 
 const StyledReviewTabs = styled.div`
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  gap: 16px;
 `
 
 const ReviewTab = styled.div`
   background-color: #555;
   padding: 8px 40px 8px 8px;
-  margin-right: 24px;
   color: #fafafa;
   border-radius: 999px;
   display: flex;
   gap: 8px;
   align-items: center;
+  font-size: 24px;
+  font-weight: 300;
 `
 const Avatar = styled.img`
   border-radius: 50%;

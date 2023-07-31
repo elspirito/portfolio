@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *:focus-visible {
-    outline: 4px solid ${theme.colors.dark.accent.hover};
+    outline: 2px solid ${theme.colors.dark.accent.hover};
     border-radius: 999px;
   }
 
@@ -36,6 +36,7 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.025em;
     line-height: 1.2;
+    font-weight: 1000;
   }
 
   section {
@@ -74,8 +75,10 @@ export const GlobalStyle = createGlobalStyle`
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
-    &:focus {
-      border-radius: 8px;
+    &:focus-visible {
+      border-radius: 0;
+      outline: 0;
+      border-bottom: 2px solid ${theme.colors.dark.accent.base};
     }
     
     &::placeholder {

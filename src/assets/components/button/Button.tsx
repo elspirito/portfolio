@@ -65,4 +65,8 @@ const StyledButton = styled.button<StyledButtonPropsType>`
   }
 `
 const Label = styled.label`
+  font-family: 'Roboto Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-weight: 1000;
 `

@@ -18,7 +18,7 @@ const StyledFooter = styled.footer`
   min-height: 300px;
   
   ${ContainerWrapper} {
-    border-top: 1px solid #333;
+    border-top: 2px solid #333;
     flex-direction: column;
     gap: 24px;
     display: flex;

@@ -41,6 +41,7 @@ const NameWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin: 0 24px 0 0;
 `
 
 const Name = styled.h3`
