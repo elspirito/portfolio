@@ -7,27 +7,31 @@ import {theme} from "../../styles/Theme";
 export const Expirience = () => {
     return (
         <StyledExpirience>
-            <div>
+            <ExpirienceWrapper>
                 <SectionTitle>
-                    Балабоба был создан в 2021 году для демонстрации
-                    возможностей первой версии языковой модели YaLM
-                    (Yet another Language Model).
+                    <span>Более 10 лет опыта</span> в области интерактивного дизайна и работы с талантливыми людьми в
+                    бизнесе
                 </SectionTitle>
                 <Pic src={mapPath}/>
-            </div>
+            </ExpirienceWrapper>
         </StyledExpirience>
     );
 };
 
 const StyledExpirience = styled.section`
 
-  div {
-    background-color: ${theme.colors.dark.secondaryBg};
-    overflow: hidden;
-    padding: 40px;
-    border-radius: 24px;
-    max-width: 1440px;
-    margin: 0 auto;
+`
+
+const ExpirienceWrapper = styled.div`
+  background-color: ${theme.colors.dark.secondaryBg};
+  overflow: hidden;
+  padding: 64px;
+  border-radius: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  
+  span{
+    color: ${theme.colors.dark.accent.base};
   }
 `
 

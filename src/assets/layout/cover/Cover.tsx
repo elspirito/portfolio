@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Button} from "../../components/button/Button";
 import deer from "../../images/deer.webp";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
+import {theme} from "../../styles/Theme";
 
 export const Cover = () => {
     return (
@@ -15,9 +16,8 @@ export const Cover = () => {
                     </CoverTitle>
 
                     <CoverDescription>
-                        Балабоба был создан в 2021 году для демонстрации
-                        возможностей первой версии языковой модели YaLM
-                        (Yet another Language Model).
+                        — Ориентируюсь на создание высококачественных
+                        и впечатляющих цифровых продуктов
                     </CoverDescription>
 
                     <FlexWrapper gap={"40px"}>
@@ -32,26 +32,33 @@ export const Cover = () => {
 };
 
 const StyledCover = styled.section`
-  min-height: 80vh;
-  padding-bottom: 0;
+  padding: 0;
 `
 
 const CoverMain = styled.div`
-
+  min-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  //padding: 100px 0;
 `
 
 const CoverTitle = styled.h1`
   color: #fafafa;
   font-size: 128px;
-  margin-bottom: 40px;
+  width: 100%;
 
   span {
     display: block;
-    text-align: right;
+    text-align: center;
   }
+  
+  
 `
-const CoverDescription = styled.p`
-  margin-bottom: 120px;
+const CoverDescription = styled.blockquote`
+    font-weight: 300;
+  color: ${theme.colors.dark.fontSecondary};
 `
 
 const Deer = styled.img`

@@ -35,7 +35,9 @@ export const Stack = () => {
 const StyledStack = styled.section`
 `
 const Directions = styled.div`
-  border-bottom: 1px splid ${theme.colors.dark.fontSecondary};
+  border-bottom: 1px solid ${theme.colors.dark.tertiaryBg};
+  padding-bottom: 100px;
+  margin-bottom: 100px;
 `
 
 const BigText = styled.h6`
@@ -49,5 +51,4 @@ const BigText = styled.h6`
 const StackIcons = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 80px 0;
 `

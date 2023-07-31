@@ -10,11 +10,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   *:focus {
     outline: 0;
   }
-  
+
   *:focus-visible {
     outline: 4px solid ${theme.colors.dark.accent.hover};
     border-radius: 999px;
@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    padding: 120px 0;
+    padding: 200px 0;
   }
 
   p {
@@ -68,9 +68,19 @@ export const GlobalStyle = createGlobalStyle`
     border: unset;
     border-bottom: 1px solid ${theme.colors.dark.fontSecondary};
     color: #fff;
+    font-size: 24px;
+    opacity: 1;
+    font-family: 'Roboto Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 
     &:focus {
       border-radius: 8px;
     }
+    
+    &::placeholder {
+      color: #333;
+    }
+    
   }
 `

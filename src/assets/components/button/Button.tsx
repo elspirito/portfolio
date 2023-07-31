@@ -34,7 +34,7 @@ const StyledButton = styled.button<StyledButtonPropsType>`
         return "transparent";
         break;
       default:
-        return theme.colors.dark.secondaryBg;
+        return theme.colors.dark.tertiaryBg;
         break;
     }
   }};
