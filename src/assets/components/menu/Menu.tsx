@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
+import {Icon} from "../icon/Icon";
 
 export const Menu = (props: { menuData: Array<string> }) => {
     return (
@@ -8,9 +10,10 @@ export const Menu = (props: { menuData: Array<string> }) => {
                 {props.menuData.map(
                     (menuDataItems, index) => {
                         return (
-                            <li key={index}>
-                                <a href="">{menuDataItems}</a>
-                            </li>
+                            <MenuItem key={index}>
+                                <Icon iconId={"star"}/>
+                                <MenuLink href="">{menuDataItems}</MenuLink>
+                            </MenuItem>
                         )
                     }
                 )}
@@ -24,7 +27,23 @@ const StyledMenu = styled.nav`
     display: flex;
     gap: 32px;
   }
-  a {
-    font-weight: 300;
+`
+
+const MenuItem = styled.li`
+display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  &:hover {
+    color: ${theme.colors.dark.accent.base};
   }
+`
+
+const MenuLink = styled.a`
+  font-weight: 300;
+  
+  &:hover {
+    color: ${theme.colors.dark.accent.base};
+  }
+  
 `
