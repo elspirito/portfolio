@@ -40,11 +40,12 @@ const Directions = styled.div`
   margin-bottom: 100px;
 `
 
-const BigText = styled.h6`
+const BigText = styled.p`
   font-size: 175px;
   font-variation-settings: 'wght' 1000;
   text-transform: uppercase;
   text-align: right;
+  line-height: 1.2;
   color: #333;
 `
 

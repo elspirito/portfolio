@@ -5,8 +5,8 @@ import {theme} from "../../styles/Theme";
 
 export const Logo = () => {
     return (
-        <StyledLogo href={"/"}>
-            <Avatar src={avatar}/>
+        <StyledLogo href={"/"}  aria-label="На главную">
+            <Avatar src={avatar} alt={"Савинов Артем"}/>
             <NameWrapper>
                 <Disclaimer>
                     <small>Дизайнер</small>

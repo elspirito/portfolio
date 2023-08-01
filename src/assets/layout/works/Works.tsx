@@ -23,12 +23,12 @@ export const Works = () => {
                 </WorkTabsWrapper>
 
                 <StyledWorksWrapper>
-                    <Work src={gfPreview} className={"cell"}/>
-                    <Work src={konsolPreview} className={"cell"}/>
-                    <Work src={lucrosPreview} className={"cell"}/>
-                    <Work src={sberPreview} className={"cell"}/>
-                    <Work src={shb2Preview} className={"cell"}/>
-                    <Work src={shbPreview} className={"cell"}/>
+                    <Work src={gfPreview} className={"cell"} alt={"Проект Гудфин"}/>
+                    <Work src={konsolPreview} className={"cell"} alt={"Проект Консоль"}/>
+                    <Work src={lucrosPreview} className={"cell"} alt={"Проект Лукрос"}/>
+                    <Work src={sberPreview} className={"cell"} alt={"Проект СБЕР"}/>
+                    <Work src={shb2Preview} className={"cell"} alt={"Проект Сайт для Сервисхаба"}/>
+                    <Work src={shbPreview} className={"cell"} alt={"Проект Сервисхаб"}/>
                 </StyledWorksWrapper>
 
                 <Paginator><span></span><span></span><span></span></Paginator>

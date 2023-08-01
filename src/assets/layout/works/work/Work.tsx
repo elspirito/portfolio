@@ -3,12 +3,13 @@ import styled from "styled-components";
 
 type WorkPropsType = {
     src: string
+    alt: string
     className?: string
 };
 
 export const Work = (props: WorkPropsType) => {
     return (
-        <StyledWork src={props.src} className={props.className}/>
+        <StyledWork src={props.src} className={props.className} alt={props.alt}/>
     );
 };
 

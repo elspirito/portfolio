@@ -5,12 +5,12 @@ import {Icon} from "../icon/Icon";
 
 export const Menu = (props: { menuData: Array<string> }) => {
     return (
-        <StyledMenu>
-            <ul>
+        <StyledMenu >
+            <ul role={'menu'} aria-label="Меню">
                 {props.menuData.map(
                     (menuDataItems, index) => {
                         return (
-                            <MenuItem key={index}>
+                            <MenuItem role="menuitem" key={index}>
                                 <Icon iconId={"star"}/>
                                 <MenuLink href="">{menuDataItems}</MenuLink>
                             </MenuItem>

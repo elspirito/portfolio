@@ -26,7 +26,7 @@ export const Cover = () => {
                     </FlexWrapper>
                 </CoverMain>
             </ContainerWrapper>
-            <Deer src={deer}/>
+            <Deer src={deer} alt={"Изображение оленя из стекла c летающими огоньками внутри"}/>
         </StyledCover>
     );
 };
@@ -39,9 +39,9 @@ const CoverMain = styled.div`
   min-height: 72vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 40px;
   margin-bottom: 100px;
-  //padding: 100px 0;
 `
 
 const CoverTitle = styled.h1`

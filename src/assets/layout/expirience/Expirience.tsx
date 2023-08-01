@@ -12,7 +12,7 @@ export const Expirience = () => {
                     <span>Более 10 лет опыта</span> в области интерактивного дизайна и работы с талантливыми людьми в
                     бизнесе
                 </SectionTitle>
-                <Pic src={mapPath}/>
+                <SkillScheme src={mapPath} alt={"Схема хард скиллов"}/>
             </ExpirienceWrapper>
         </StyledExpirience>
     );
@@ -35,7 +35,7 @@ const ExpirienceWrapper = styled.div`
   }
 `
 
-const Pic = styled.img`
+const SkillScheme = styled.img`
   width: 1392px;
   height: 380px;
 `

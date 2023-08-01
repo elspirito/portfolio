@@ -12,16 +12,16 @@ export const Contacts = () => {
                 <SectionTitle>Контакты</SectionTitle>
                 <StyledForm action="">
                     <FlexWrapper gap={"40px"}>
-                        <Field placeholder={"Ваше имя"}/>
-                        <Field placeholder={"Эл.почта"}/>
+                        <Field placeholder={"Ваше имя"} aria-placeholder={"Ваше имя"}/>
+                        <Field placeholder={"Эл.почта"} aria-placeholder={"Эл.почта"}/>
                     </FlexWrapper>
-                    <Field as={"textarea"} placeholder={"Текст сообщения..."}/>
-                    <Button variant={"primary"} label={"Отправить"}/>
+                    <Field as={"textarea"} placeholder={"Текст сообщения..."} aria-placeholder={"Текст сообщения..."}/>
+                    <Button variant={"primary"} label={"Отправить"} aria-label={"Отправить"} />
                 </StyledForm>
                 <FlexWrapper gap={"40px"}>
-                    <Button variant={"tertirary"} label={"el_spirito_santo"} iconLeft={"tg"}/>
-                    <Button variant={"tertirary"} label={"el_spirito"} iconLeft={"vk"}/>
-                    <Button variant={"tertirary"} label={"el_spirito"} iconLeft={"github"}/>
+                    <Button variant={"tertirary"} label={"el_spirito_santo"} iconLeft={"tg"} aria-label="Перейти в телеграм"/>
+                    <Button variant={"tertirary"} label={"el_spirito"} iconLeft={"vk"} aria-label="Перейти во вконтакте"/>
+                    <Button variant={"tertirary"} label={"el_spirito"} iconLeft={"github"} aria-label="Перейти в гитхаб"/>
                 </FlexWrapper>
             </ContainerWrapper>
         </StyledContacts>
