@@ -12,5 +12,11 @@ export const theme = {
             fontPrimary: "#fafafa",
             fontSecondary: "#888888"
         }
+    },
+
+    media: {
+        small: "screen and (max-width: 576px)",
+        medium: "screen and (max-width: 768px)",
+        large: "screen and (max-width: 1200px)"
     }
 };

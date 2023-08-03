@@ -21,10 +21,10 @@ export const Cover = () => {
                         и впечатляющих цифровых продуктов
                     </CoverDescription>
 
-                    <FlexWrapper gap={"40px"}>
+                    <CoverActions>
                         <Button variant={"primary"} label={"Поподробнее?"}/>
                         <Button variant={"secondary"} label={"Обсудить проект"}/>
-                    </FlexWrapper>
+                    </CoverActions>
                 </CoverMain>
             </ContainerWrapper>
             <Deer src={deer} alt={"Изображение оленя из стекла c летающими огоньками внутри"}/>
@@ -52,14 +52,21 @@ const CoverTitle = styled.h1`
     display: block;
     text-align: center;
   }
-  
-  
+
+
 `
 const CoverDescription = styled.blockquote`
-    font-weight: 300;
+  font-weight: 300;
   color: ${theme.colors.dark.fontSecondary};
 `
-
+const CoverActions = styled.div`
+  display: flex;
+  gap: 40px;
+  
+  @media ${theme.media.medium} {
+    flex-wrap: wrap;
+  }
+`
 const Deer = styled.img`
   height: 42vh;
   width: 33vw;
