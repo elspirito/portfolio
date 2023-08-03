@@ -41,7 +41,6 @@ const CoverMain = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   gap: 40px;
-  margin-bottom: 100px;
 `
 
 const CoverTitle = styled.h1`
