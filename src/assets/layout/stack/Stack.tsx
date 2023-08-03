@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {Icon} from "../../components/icon/Icon";
 import {theme} from "../../styles/Theme";
+import {font} from "../../styles/Mixins";
 
 export const Stack = () => {
     return (
@@ -41,15 +42,13 @@ const Directions = styled.div`
 `
 
 const BigText = styled.p`
-  font-size: 175px;
-  font-variation-settings: 'wght' 1000;
+  ${font({weight: 1000, Fmax: 192, Fmin: 46, lineHeight: 1.1, color: "#333"})};
   text-transform: uppercase;
   text-align: right;
-  line-height: 1.2;
-  color: #333;
 `
 
 const StackIcons = styled.div`
   display: flex;
   justify-content: space-between;
+  color: ${theme.colors.dark.fontSecondary};
 `

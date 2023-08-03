@@ -22,31 +22,32 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: 'Roboto Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.dark.fontPrimary};
     font-size: 24px;
     background-color: ${theme.colors.dark.primaryBg};
     font-weight: 1000;
+    font-variation-settings:  "wdth" 151;
+    min-width: 360px;
+    line-height: 1.2;
   }
 
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.025em;
-    line-height: 1.2;
-    font-weight: 1000;
   }
 
   section {
     padding: 200px 0;
+    
+    
   }
 
   p {
     color: ${theme.colors.dark.fontSecondary};
     line-height: 1.6;
-    font-variation-settings: 'wght' 300;
+    font-weight: 300;
   }
 
   a {
@@ -65,15 +66,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   input, textarea {
+    font-family: 'Roboto Flex', sans-serif;
     background-color: ${theme.colors.dark.primaryBg};
     border: unset;
     border-bottom: 1px solid ${theme.colors.dark.fontSecondary};
     color: #fff;
     font-size: 24px;
     opacity: 1;
-    font-family: 'Roboto Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
 
     &:focus-visible {
       border-radius: 0;

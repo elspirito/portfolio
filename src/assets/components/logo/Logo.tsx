@@ -46,6 +46,7 @@ const NameWrapper = styled.div`
 
 const Name = styled.h3`
   font-size: 24px;
+  font-weight: 1000;
 `
 
 const Disclaimer = styled.div`

@@ -45,15 +45,13 @@ const CoverMain = styled.div`
 `
 
 const CoverTitle = styled.h1`
-  ${font({weight: 1000, Fmin: 40, Fmax: 120})};
+  ${font({Fmin: 40, Fmax: 120})};
   width: 100%;
 
   span {
     display: block;
     text-align: center;
   }
-
-
 `
 const CoverDescription = styled.blockquote`
   font-weight: 300;
@@ -62,7 +60,7 @@ const CoverDescription = styled.blockquote`
 const CoverActions = styled.div`
   display: flex;
   gap: 40px;
-  
+
   @media ${theme.media.medium} {
     flex-wrap: wrap;
   }
