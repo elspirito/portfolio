@@ -5,6 +5,7 @@ import {Button} from "../../components/button/Button";
 import deer from "../../images/deer.webp";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {theme} from "../../styles/Theme";
+import {font} from "../../styles/Mixins";
 
 export const Cover = () => {
     return (
@@ -44,8 +45,7 @@ const CoverMain = styled.div`
 `
 
 const CoverTitle = styled.h1`
-  color: #fafafa;
-  font-size: 128px;
+  ${font({weight: 1000, Fmin: 40, Fmax: 120})};
   width: 100%;
 
   span {
