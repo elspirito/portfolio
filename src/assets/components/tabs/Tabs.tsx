@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {font} from "../../styles/Mixins";
 
 export const Tabs = (props: { tabsData: Array<string> }) => {
     return (
@@ -26,9 +27,8 @@ const StyledTabs = styled.nav`
     gap: 32px;
   }
   a {
-    font-size: 64px;
+    ${font({weight: 1000, Fmax: 64, Fmin: 24})};
     margin-bottom: 40px;
-    font-weight: 900;
     
     &:hover {
       color: ${theme.colors.dark.accent.base};

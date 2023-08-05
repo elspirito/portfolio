@@ -10,6 +10,7 @@ import shb2Preview from "../../images/projects/shb2-preview.webp"
 import shbPreview from "../../images/projects/shb-preview.webp"
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {Button} from "../../components/button/Button";
+import {theme} from "../../styles/Theme";
 
 const tabsDataItems = ["Кейсы", "Визуал", "Разработка"]
 
@@ -41,13 +42,6 @@ const StyledWorks = styled.section`
   padding: 100px 0;
 `
 const StyledWorksWrapper = styled.div`
-  gap: 40px;
-  display: grid;
-  //grid-template-columns: 10% 20% 10% 20% 20%;
-  grid-template-areas:
-    "card1 card1 card1 card2 card2 card3 card3"
-    "card4 card4 card5 card5 card6 card6 card6";
-
   .cell:nth-child(1) {
     grid-area: card1;
   }
@@ -70,6 +64,21 @@ const StyledWorksWrapper = styled.div`
 
   .cell:nth-child(6) {
     grid-area: card6;
+  }
+  
+  
+  gap: 40px;
+  display: grid;
+  //grid-template-columns: 10% 20% 10% 20% 20%;
+  grid-template-areas:
+    "card1 card1 card1 card2 card2 card3 card3"
+    "card4 card4 card5 card5 card6 card6 card6";
+
+  @media ${theme.media.medium} {
+    grid-template-areas:
+    "card1 card1 card1 card1 card2"
+    "card3 card3 card4 card4 card4"
+    "card5 card5 card5 card6 card6";
   }
 `
 

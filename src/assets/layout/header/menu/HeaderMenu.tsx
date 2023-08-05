@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../styles/Theme";
-import {Icon} from "../icon/Icon";
+import {theme} from "../../../styles/Theme";
+import {Icon} from "../../../components/icon/Icon";
 
-export const Menu = (props: { menuData: Array<string> }) => {
+export const HeaderMenu = (props: { menuData: Array<string> }) => {
     return (
-        <StyledMenu >
+        <StyledHeaderMenu >
             <ul role={'menu'} aria-label="Меню">
                 {props.menuData.map(
                     (menuDataItems, index) => {
@@ -18,14 +18,18 @@ export const Menu = (props: { menuData: Array<string> }) => {
                     }
                 )}
             </ul>
-        </StyledMenu>
+        </StyledHeaderMenu>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
     gap: 32px;
+  }
+  
+  @media ${theme.media.large} {
+    display: none;
   }
 `
 

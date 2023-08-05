@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
+import {HeaderMenu} from "./menu/HeaderMenu";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {MobileMenu} from "./menu/MobileMenu";
 
 const menuDataItems = ["Кейсы", "Опыт", "CV", "Отзывы", "Контакты"];
 
@@ -13,7 +14,8 @@ export const Header = () => {
             <ContainerWrapper>
                 <FlexWrapper direction={"row"} justify={"space-between"}>
                     <Logo/>
-                    <Menu menuData={menuDataItems}/>
+                    <HeaderMenu menuData={menuDataItems}/>
+                    <MobileMenu menuData={menuDataItems}/>
                 </FlexWrapper>
             </ContainerWrapper>
         </StyledHeader>
