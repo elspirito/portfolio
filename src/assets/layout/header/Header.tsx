@@ -1,9 +1,9 @@
 import React from 'react';
 import {Logo} from "../../components/logo/Logo";
-import {DesktopMenu} from "./menu/DesktopMenu";
+import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {MobileMenu} from "./menu/MobileMenu";
+import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from '../header/Header_Styles';
 
 const menuDataItems = ["Кейсы", "Опыт", "CV", "Отзывы", "Контакты"];

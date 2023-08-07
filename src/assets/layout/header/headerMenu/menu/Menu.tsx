@@ -1,6 +1,6 @@
 import React from 'react';
-import {Icon} from "../../../components/icon/Icon";
-import {S} from '../menu/Menu_Styles'
+import {Icon} from "../../../../components/icon/Icon";
+import {S} from '../HeaderMenu_Styles'
 
 export const Menu: React.FC<{menuData: Array<string>}> = (props: {menuData: Array<string>}) => {
     return (
