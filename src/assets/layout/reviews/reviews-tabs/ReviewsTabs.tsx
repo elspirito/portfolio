@@ -2,7 +2,7 @@ import React from 'react';
 import {S} from '../Reviews_Styles';
 
 
-export const ReviewsTabs = (props: { author: Array<object> }) => {
+export const ReviewsTabs: React.FC<{ author: Array<object> }> = (props: { author: Array<object> }) => {
     return (
         <S.ReviewTabs>
             {
