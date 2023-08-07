@@ -41,7 +41,9 @@ export const GlobalStyle = createGlobalStyle`
   section {
     padding: 200px 0;
     
-    
+    @media ${theme.media.small} {
+    padding: 100px 0;
+  }
   }
 
   p {
@@ -57,12 +59,6 @@ export const GlobalStyle = createGlobalStyle`
 
   li {
     list-style: none;
-  }
-
-  button {
-    border-radius: 999px;
-    padding: 0px 40px;
-    min-height: 80px;
   }
 
   input, textarea {

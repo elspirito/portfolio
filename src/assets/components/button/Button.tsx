@@ -4,7 +4,8 @@ import {theme} from "../../styles/Theme";
 import {Icon} from "../icon/Icon";
 
 type ButtonPropsType = {
-    label: string
+    width?: string
+    label?: string
     iconLeft?: string
     iconRight?: string
     variant?: string
@@ -12,13 +13,14 @@ type ButtonPropsType = {
 
 type StyledButtonPropsType = {
     styledVariant?: string
+    styledWidth?: string
 }
 
 export const Button = (props: ButtonPropsType) => {
     return (
-        <StyledButton styledVariant={props.variant}>
+        <StyledButton styledVariant={props.variant} styledWidth={props.width}>
             {props.iconLeft && <Icon iconId={props.iconLeft}/>}
-            <Label>{props.label}</Label>
+            {props.label}
             {props.iconRight && <Icon iconId={props.iconRight}/>}
         </StyledButton>
     );
@@ -55,18 +57,16 @@ const StyledButton = styled.button<StyledButtonPropsType>`
   font-size: 24px;
   display: flex;
   align-items: center;
-  gap: 16px;
   justify-content: center;
-  width: 100%;
+  min-width: 80px;
+  width: ${(props) => props.styledWidth};
+  border-radius: 999px;
+  min-height: 80px;
+  font-weight: 300;
+  text-transform: uppercase;
 
   &:hover {
     cursor: pointer;
     background-color: ${theme.colors.dark.accent.hover};
   }
-`
-const Label = styled.label`
-  font-family: 'Roboto Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  font-weight: 1000;
 `

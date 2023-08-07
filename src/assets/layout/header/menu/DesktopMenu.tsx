@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {Icon} from "../../../components/icon/Icon";
 
-export const HeaderMenu = (props: { menuData: Array<string> }) => {
+export const DesktopMenu = (props: { menuData: Array<string> }) => {
     return (
         <StyledHeaderMenu >
             <ul role={'menu'} aria-label="Меню">

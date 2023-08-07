@@ -1,6 +1,6 @@
 import './App.css';
 import {Header} from "./assets/layout/header/Header";
-import {Cover} from "./assets/layout/cover/Cover";
+import {Main} from "./assets/layout/main/Main";
 import {Stack} from "./assets/layout/stack/Stack";
 import {Reviews} from "./assets/layout/reviews/Reviews";
 import {Works} from "./assets/layout/works/Works";
@@ -13,7 +13,7 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <Cover/>
+            <Main/>
             <Stack/>
             <Works/>
             <Expirience/>

@@ -1,54 +1,32 @@
 import React from 'react';
-import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {Icon} from "../../components/icon/Icon";
-import {theme} from "../../styles/Theme";
-import {font} from "../../styles/Mixins";
+import {S} from '../stack/Stack_Styles'
 
-export const Stack = () => {
+export const Stack: React.FC = () => {
     return (
-        <StyledStack>
+        <S.Stack>
             <ContainerWrapper>
 
-                <Directions>
+                <S.Directions>
                     <FlexWrapper gap={"40px"}>
-                        <BigText>UIX</BigText>
-                        <BigText>3D</BigText>
+                        <S.BigText>UIX</S.BigText>
+                        <S.BigText>3D</S.BigText>
                     </FlexWrapper>
-                    <BigText>Front-end</BigText>
-                    <BigText>Motion</BigText>
-                </Directions>
+                    <S.BigText>Front-end</S.BigText>
+                    <S.BigText>Motion</S.BigText>
+                </S.Directions>
 
-                <StackIcons>
+                <S.StackIcons>
                     <Icon iconId={"figma"} width={"120"} height={"120"}/>
                     <Icon iconId={"html"} width={"120"} height={"120"}/>
                     <Icon iconId={"css"} width={"120"} height={"120"}/>
                     <Icon iconId={"sass"} width={"120"} height={"120"}/>
                     <Icon iconId={"react"} width={"120"} height={"120"}/>
-                </StackIcons>
+                </S.StackIcons>
 
             </ContainerWrapper>
-        </StyledStack>
+        </S.Stack>
     );
 };
-
-const StyledStack = styled.section`
-`
-const Directions = styled.div`
-  border-bottom: 2px solid ${theme.colors.dark.tertiaryBg};
-  padding-bottom: 100px;
-  margin-bottom: 100px;
-`
-
-const BigText = styled.p`
-  ${font({weight: 1000, Fmax: 192, Fmin: 46, lineHeight: 1.1, color: "#333"})};
-  text-transform: uppercase;
-  text-align: right;
-`
-
-const StackIcons = styled.div`
-  display: flex;
-  justify-content: space-between;
-  color: ${theme.colors.dark.fontSecondary};
-`

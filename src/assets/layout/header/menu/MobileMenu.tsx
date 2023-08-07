@@ -43,7 +43,7 @@ const StyledMobileMenu = styled.nav`
 
 const BurgerButton = styled.div<{ isOpen: boolean }>`
   width: 100px;
-  height: 100px;
+  height: 150px;
   position: fixed;
   top: 0;
   right: 0;
@@ -51,8 +51,9 @@ const BurgerButton = styled.div<{ isOpen: boolean }>`
 
   span {
     position: absolute;
-    top: 40px;
-    left: 24px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
     display: block;
     height: 3px;
     width: 36px;
