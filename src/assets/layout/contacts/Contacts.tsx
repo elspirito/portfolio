@@ -4,6 +4,22 @@ import {Button} from "../../components/button/Button";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {ContainerWrapper} from "../../components/ContainerWrapper";
 import {S} from '../contacts/Contacts_Styled';
+import {SocialButtons} from "./socialButtons/SocialButtons";
+
+const socialItemsData = [
+    {
+        icon: "tg",
+        url: "@el_spirito_santo"
+    },
+    {
+        icon: "vk",
+        url: "@el_spirito"
+    },
+    {
+        icon: "github",
+        url: "@el_spirito"
+    }
+]
 
 export const Contacts: React.FC = () => {
     return (
@@ -18,14 +34,15 @@ export const Contacts: React.FC = () => {
                     <S.Field as={"textarea"} placeholder={"Текст сообщения..."} aria-placeholder={"Текст сообщения..."}/>
                     <Button variant={"primary"} label={"Отправить"} aria-label={"Отправить"} />
                 </S.Form>
+
                 <FlexWrapper gap={"24px"} justify={"center"}>
-                    <Button variant={"tertirary"} iconLeft={"tg"} aria-label="Перейти в телеграм"/>
-                    <Button variant={"tertirary"} iconLeft={"vk"} aria-label="Перейти во вконтакте"/>
-                    <Button variant={"tertirary"} iconLeft={"github"} aria-label="Перейти в гитхаб"/>
+                    <SocialButtons socialItems={socialItemsData}/>
                 </FlexWrapper>
             </ContainerWrapper>
         </S.Contacts>
     );
 };
+
+
 
 

@@ -6,11 +6,11 @@ export const ReviewsTabs: React.FC<{ author: Array<object> }> = (props: { author
     return (
         <S.ReviewTabs>
             {
-                props.author.map((current: any) => {
+                props.author.map((a: any) => {
                     return (
                         <S.ReviewTab>
-                            <S.Avatar width={"48px"} height={"48px"} src={current.authorAvatar} alt=""/>
-                            <S.Author>{current.authorName}</S.Author>
+                            <S.Avatar width={"48px"} height={"48px"} src={a.authorAvatar} alt=""/>
+                            <S.Author>{a.authorName}</S.Author>
                         </S.ReviewTab>
                     )
                 })

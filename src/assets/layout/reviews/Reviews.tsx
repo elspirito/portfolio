@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReviewsTabs} from "./reviews-tabs/ReviewsTabs";
+import {ReviewsTabs} from "./reviewsTabs/ReviewsTabs";
 import {SectionTitle} from "../../components/SectionTitle";
 import ava1 from "../../images/reviews/ava1.webp";
 import ava2 from "../../images/reviews/ava2.webp";
