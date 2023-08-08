@@ -19,7 +19,7 @@ export const Works: React.FC = () => {
             <ContainerWrapper>
                 <S.WorkTabsWrapper>
                     <WorkTabs tabsData={tabsDataItems}/>
-                    <Button variant={"secondary"} label={"Все"} iconRight={"arrow-right"}/>
+                    <Button variant={"secondary"} label={"Все"} iconRight={"arrow-right"} width={"100%"}/>
                 </S.WorkTabsWrapper>
 
                 <S.WorksWrapper>
