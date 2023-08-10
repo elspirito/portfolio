@@ -5,102 +5,82 @@ import {font} from "../../styles/Mixins";
 const Works = styled.section`
   padding: 100px 0;
 `
-const WorksWrapper = styled.div`
-  .cell:nth-child(1) {
-    grid-area: card1;
-  }
-
-  .cell:nth-child(2) {
-    grid-area: card2;
-  }
-
-  .cell:nth-child(3) {
-    grid-area: card3;
-  }
-
-  .cell:nth-child(4) {
-    grid-area: card4;
-  }
-
-  .cell:nth-child(5) {
-    grid-area: card5;
-  }
-
-  .cell:nth-child(6) {
-    grid-area: card6;
-  }
-
-
-  gap: 40px;
-  display: grid;
-  //grid-template-columns: 10% 20% 10% 20% 20%;
-  grid-template-areas:
-    "card1 card1 card1 card2 card2 card3 card3"
-    "card4 card4 card5 card5 card6 card6 card6";
-
-  @media ${theme.media.medium} {
-    grid-template-areas:
-    "card1 card1 card1 card1 card2"
-    "card3 card3 card4 card4 card4"
-    "card5 card5 card5 card6 card6";
-  }
-
-  @media ${theme.media.small} {
-    grid-template-areas:
-    "card1"
-    "card2"
-    "card3"
-    "card4"
-    "card5"
-    "card6";
-  }
-`
 const WorkTabsWrapper = styled.div`
   margin-bottom: 64px;
   display: flex;
   align-items: center;
   gap: 40px;
-  
-  @media ${theme.media.small} {
-    overflow: auto;
-    flex-wrap: wrap;
-  }
-`
-const Paginator = styled.div`
-  display: flex;
-  gap: 16px;
-  margin: 40px 0;
-  align-items: center;
-  justify-content: center;
-
-  span {
-    width: 8px;
-    height: 8px;
-
-    &:nth-child(1) {
-      width: 24px;
-    }
-  }
+  overflow: auto;
 `
 const Tabs = styled.nav`
   ul {
     display: flex;
     gap: 32px;
   }
+
   a {
     ${font({weight: 1000, Fmax: 64, Fmin: 24})};
     margin-bottom: 40px;
-    
+
     &:hover {
       color: ${theme.colors.dark.accent.base};
     }
   }
 `
+const Work = styled.div`
+  display: flex;
+  flex-direction: column;
+  //max-width: 740px;
+  width: 480px;
+  flex-grow: 1;
+
+  @media ${theme.media.medium} {
+    width: 380px;
+  }
+`
+const Preview = styled.img`
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+`
+const Info = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+  min-height: 40px;
+`
+const Title = styled.h3`
+  display: inline;
+  font-size: 24px;
+  margin-right: 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #F1E2FF;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    right: -15px;
+  }
+`
+const Description = styled.p`
+  padding: 4px 0 0 0;
+  display: inline;
+  font-size: 16px;
+`
 
 export const S = {
-    Works,
-    WorksWrapper,
     WorkTabsWrapper,
-    Paginator,
-    Tabs
+    Tabs,
+    Works,
+    Work,
+    Preview,
+    Info,
+    Title,
+    Description
 }

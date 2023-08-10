@@ -1,15 +1,15 @@
 import React from 'react';
 import  {S} from '../Works_Styles'
 
-export const WorkTabs = (props: { tabsData: Array<string> }) => {
+export const WorkTabs = (props: { tabsItems: Array<{title:string, status: "case" | "visual" | "dev"}> }) => {
     return (
         <S.Tabs>
             <ul>
-                {props.tabsData.map(
-                    (tabsDataItems, index) => {
+                {props.tabsItems.map(
+                    (t, index) => {
                         return (
                             <li key={index}>
-                                <a href="">{tabsDataItems}</a>
+                                <a href="">{t.title}</a>
                             </li>
                         )
                     }

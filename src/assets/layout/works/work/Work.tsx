@@ -1,25 +1,20 @@
 import React from 'react';
-import styled from "styled-components";
+import {S} from '../Works_Styles'
 
-type WorkPropsType = {
+type workProsType = {
     src: string
-    alt: string
-    className?: string
-};
+    title: string
+    text: string
+}
 
-export const Work = (props: WorkPropsType) => {
+export const Work = (props: workProsType) => {
     return (
-        <StyledWork src={props.src} className={props.className} alt={props.alt}/>
+        <S.Work>
+            <S.Preview src={props.src}/>
+            <S.Info>
+                <S.Title>{props.title}</S.Title>
+                <S.Description>{props.text}</S.Description>
+            </S.Info>
+        </S.Work>
     );
 };
-
-const StyledWork = styled.img`
-  background-color: #333;
-  min-height: 380px;
-  object-fit: cover;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 24px;
-  border: none;
-`
-

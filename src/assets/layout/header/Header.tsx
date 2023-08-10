@@ -6,8 +6,6 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from '../header/Header_Styles';
 
-const menuDataItems = ["Кейсы", "Опыт", "CV", "Отзывы", "Контакты"];
-
 export const Header = () => {
 
     const [width, setWidth] = React.useState(window.innerWidth);
@@ -26,8 +24,8 @@ export const Header = () => {
                 <FlexWrapper direction={"row"} justify={"space-between"}>
                     <Logo/>
                     {width < breakpoint ?
-                        <MobileMenu menuData={menuDataItems}/> :
-                        <DesktopMenu menuData={menuDataItems}/> }
+                        <MobileMenu/> :
+                        <DesktopMenu/> }
 
                 </FlexWrapper>
             </ContainerWrapper>
