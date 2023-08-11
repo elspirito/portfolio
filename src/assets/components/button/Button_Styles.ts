@@ -27,6 +27,7 @@ const Button = styled.button<StyledButtonPropsType>`
   min-height: 80px;
   font-weight: 300;
   text-transform: uppercase;
+  transition: ${theme.animation.transition};
 
   &:hover {
     cursor: pointer;

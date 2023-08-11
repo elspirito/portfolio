@@ -14,6 +14,7 @@ const Button = styled.a`
   margin: 20px;
   padding: 20px;
   border-radius: 50%;
+  transition: ${theme.animation.transition};
 
   &:hover {
     background-color: ${theme.colors.dark.accent.hover};

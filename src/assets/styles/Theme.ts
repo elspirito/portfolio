@@ -18,5 +18,9 @@ export const theme = {
         small: "screen and (max-width: 576px)",
         medium: "screen and (max-width: 768px)",
         large: "screen and (max-width: 1200px)"
+    },
+
+    animation: {
+        transition: ".3s ease-in-out"
     }
 };

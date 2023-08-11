@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         <S.Footer>
             <ContainerWrapper>
                 <Icon iconId={"spirito"} width={"75"} height={"48"} viewBox={"0 0 75 48"}/>
-                <p>© 2013 — 2023</p>
+                <p>© 2023</p>
             </ContainerWrapper>
         </S.Footer>
     );

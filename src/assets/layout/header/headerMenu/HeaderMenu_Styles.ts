@@ -8,18 +8,13 @@ const DesktopMenu = styled.nav`
     gap: 32px;
   }
 `
-const MenuItem = styled.li`
-display: flex;
-  align-items: center;
-  gap: 8px;
-  
-  &:hover {
-    color: ${theme.colors.dark.accent.base};
-  }
-`
 const MenuLink = styled.a`
   font-weight: 300;
-  
+  transition: ${theme.animation.transition};
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
   &:hover {
     color: ${theme.colors.dark.accent.base};
   }
@@ -110,7 +105,6 @@ const MobileMenuWrapper = styled.div<{ isOpen: boolean }>`
 
 export const S = {
     DesktopMenu,
-    MenuItem,
     MenuLink,
     MobileMenu,
     BurgerButton,

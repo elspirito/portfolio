@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {theme} from "../../styles/Theme";
 import {font} from "../../styles/Mixins";
 
@@ -73,6 +73,23 @@ const Description = styled.p`
   display: inline;
   font-size: 16px;
 `
+const Link = styled.a<{ active?: boolean }>`
+  ${font({weight: 1000, Fmax: 64, Fmin: 24})};
+  background-color: transparent;
+  font-family: 'Roboto Flex', sans-serif;
+  color: ${theme.colors.dark.fontPrimary};
+  cursor: pointer;
+  border: 0;
+  transition: ${theme.animation.transition};
+
+  &:hover {
+    color: ${theme.colors.dark.accent.base};
+  }
+
+  ${props => props.active && css<{ active?: boolean }>`
+    color: ${theme.colors.dark.accent.base};
+  `}
+`
 
 export const S = {
     WorkTabsWrapper,
@@ -82,5 +99,6 @@ export const S = {
     Preview,
     Info,
     Title,
-    Description
+    Description,
+    Link
 }

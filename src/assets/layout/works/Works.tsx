@@ -79,7 +79,6 @@ export const Works: React.FC = () => {
     if(currentFilterStatus === "case") {
         filteredWorks = worksItemsData.filter(work => work.type === "case")
     }
-
     if(currentFilterStatus === "visual") {
         filteredWorks = worksItemsData.filter(work => work.type === "visual")
     }
@@ -116,5 +115,3 @@ export const Works: React.FC = () => {
         </S.Works>
     );
 };
-
-

@@ -10,10 +10,12 @@ export const Menu: React.FC = () => {
             {menuDataItems.map(
                 (menuDataItems, index) => {
                     return (
-                        <S.MenuItem role="menuitem" key={index}>
-                            <Icon iconId={"star"}/>
-                            <S.MenuLink href="">{menuDataItems}</S.MenuLink>
-                        </S.MenuItem>
+                        <li role="menuitem" key={index}>
+                            <S.MenuLink href="">
+                                <Icon iconId={"star"}/>
+                                {menuDataItems}
+                            </S.MenuLink>
+                        </li>
                     )
                 }
             )}
