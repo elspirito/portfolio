@@ -1,7 +1,15 @@
 import React from 'react';
-import  {S} from '../Works_Styles'
+import {S} from '../Works_Styles'
+import styled, {css} from "styled-components";
+import {theme} from "../../../styles/Theme";
 
-export const WorkTabs = (props: { tabsItems: Array<{title:string, status: "case" | "visual" | "dev"}> }) => {
+export type TabsStatusPropsType = "case" | "visual" | "dev"
+type TabsPropsType = {
+    tabsItems: Array<{ title: string, status: TabsStatusPropsType }>
+    changeFilterStatus: (value: TabsStatusPropsType) => void
+    currentFilterStatus: string
+}
+export const WorkTabs = (props: TabsPropsType) => {
     return (
         <S.Tabs>
             <ul>
@@ -9,7 +17,9 @@ export const WorkTabs = (props: { tabsItems: Array<{title:string, status: "case"
                     (t, index) => {
                         return (
                             <li key={index}>
-                                <a href="">{t.title}</a>
+                                <Link active={props.currentFilterStatus === t.status} as={"button"} onClick={() => {
+                                    props.changeFilterStatus(t.status)
+                                }}>{t.title}</Link>
                             </li>
                         )
                     }
@@ -18,3 +28,21 @@ export const WorkTabs = (props: { tabsItems: Array<{title:string, status: "case"
         </S.Tabs>
     );
 };
+
+const Link = styled.a<{ active?: boolean }>`
+  background-color: transparent;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 64px;
+  font-weight: 1000;
+  color: ${theme.colors.dark.fontPrimary};
+  cursor: pointer;
+  border: 0;
+
+  &:hover {
+    color: ${theme.colors.dark.accent.base};
+  }
+
+  ${props => props.active && css<{ active?: boolean }>`
+    color: ${theme.colors.dark.accent.base};
+  `}
+`

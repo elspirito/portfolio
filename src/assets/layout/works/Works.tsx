@@ -1,5 +1,5 @@
-import React from 'react';
-import {WorkTabs} from "./workTabs/WorkTabs";
+import React, {useState} from 'react';
+import {TabsStatusPropsType, WorkTabs} from "./workTabs/WorkTabs";
 import {Work} from "./work/Work";
 import gfPreview from "../../images/projects/gf-preview.webp"
 import konsolPreview from "../../images/projects/konsol-preview.webp"
@@ -12,7 +12,7 @@ import {Button} from "../../components/button/Button";
 import {S} from '../works/Works_Styles'
 import {FlexWrapper} from "../../components/FlexWrapper";
 
-const tabsItemsData: Array<{ title: string, status: "case" | "visual" | "dev" }> = [
+const tabsItemsData: Array<{status: TabsStatusPropsType, title: string}> = [
     {
         title: "Кейсы",
         status: "case"
@@ -26,7 +26,7 @@ const tabsItemsData: Array<{ title: string, status: "case" | "visual" | "dev" }>
         status: "dev"
     },
 ];
-const wokrsItemsData = [
+const worksItemsData = [
     {
         id: 1,
         title: "Консоль.про",
@@ -72,16 +72,37 @@ const wokrsItemsData = [
 ];
 
 export const Works: React.FC = () => {
+
+    const [currentFilterStatus, setCurrentFilterStatus] = useState("case");
+    let filteredWorks = worksItemsData;
+
+    if(currentFilterStatus === "case") {
+        filteredWorks = worksItemsData.filter(work => work.type === "case")
+    }
+
+    if(currentFilterStatus === "visual") {
+        filteredWorks = worksItemsData.filter(work => work.type === "visual")
+    }
+    if(currentFilterStatus === "dev") {
+        filteredWorks = worksItemsData.filter(work => work.type === "dev")
+    }
+
+    function changeFilterStatus(value: TabsStatusPropsType) {
+        setCurrentFilterStatus(value);
+    }
+
     return (
         <S.Works>
             <ContainerWrapper>
                 <S.WorkTabsWrapper>
-                    <WorkTabs tabsItems={tabsItemsData}/>
+                    <WorkTabs tabsItems={tabsItemsData}
+                              changeFilterStatus={changeFilterStatus}
+                              currentFilterStatus={currentFilterStatus}/>
                     {/*<Button variant={"secondary"} label={"Все"} iconRight={"arrow-right"} width={"100%"}/>*/}
                 </S.WorkTabsWrapper>
 
                 <FlexWrapper wrap={"wrap"} gap={"40px"}>
-                    {wokrsItemsData.map((w) => {
+                    {filteredWorks.map((w) => {
                         return (
                             <Work
                                 src={w.src}
