@@ -31,12 +31,12 @@ const Work = styled.div`
   display: flex;
   flex-direction: column;
   //max-width: 740px;
-  width: 480px;
-  flex-grow: 1;
+  //width: 480px;
+  //flex-grow: 1;
 
-  @media ${theme.media.medium} {
-    width: 380px;
-  }
+  // @media ${theme.media.medium} {
+  //   width: 380px;
+  // }
 `
 const Preview = styled.img`
   height: 300px;
