@@ -1,16 +1,17 @@
 import styled from "styled-components";
-import {theme} from "../../styles/Theme";
 
 const Reviews = styled.section`
 `
 const Review = styled.p`
-  border-bottom: 2px solid ${theme.colors.dark.tertiaryBg};
   padding-bottom: 100px;
 `
 const ReviewTabs = styled.div`
   display: flex;
   margin-bottom: 80px;
   gap: 16px;
+`
+const UserName = styled.div`
+
 `
 const ReviewTab = styled.div`
   background-color: #555;
@@ -27,8 +28,8 @@ const Avatar = styled.img`
   border-radius: 50%;
 `
 const Author = styled.span`
- display: none; // Временно :)
 `
+
 
 export const S = {
     Reviews,
@@ -36,5 +37,6 @@ export const S = {
     ReviewTabs,
     ReviewTab,
     Avatar,
-    Author
+    Author,
+    UserName
 }
