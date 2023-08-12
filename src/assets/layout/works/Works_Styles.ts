@@ -30,13 +30,6 @@ const Tabs = styled.nav`
 const Work = styled.div`
   display: flex;
   flex-direction: column;
-  //max-width: 740px;
-  //width: 480px;
-  //flex-grow: 1;
-
-  // @media ${theme.media.medium} {
-  //   width: 380px;
-  // }
 `
 const Preview = styled.img`
   height: 300px;
@@ -73,7 +66,7 @@ const Description = styled.p`
   display: inline;
   font-size: 16px;
 `
-const Link = styled.a<{ active?: boolean }>`
+const TabLink = styled.a<{ active?: boolean }>`
   ${font({weight: 1000, Fmax: 64, Fmin: 24})};
   background-color: transparent;
   font-family: 'Roboto Flex', sans-serif;
@@ -100,5 +93,5 @@ export const S = {
     Info,
     Title,
     Description,
-    Link
+    TabLink
 }

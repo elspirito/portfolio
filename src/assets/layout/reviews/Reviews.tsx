@@ -34,7 +34,7 @@ const reviewAuthor = [
 
 export const Reviews: React.FC = () => {
     return (
-        <S.Reviews>
+        <S.Reviews id={"reviews"}>
             <ContainerWrapper>
                 <SectionTitle>Отзывы клиентов</SectionTitle>
                 <ReviewsTabs author={reviewAuthor}/>

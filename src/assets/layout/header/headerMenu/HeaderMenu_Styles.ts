@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
+import {Link} from "react-scroll";
 
 //Desktop Menu
 const DesktopMenu = styled.nav`
@@ -8,14 +9,15 @@ const DesktopMenu = styled.nav`
     gap: 32px;
   }
 `
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   font-weight: 300;
   transition: ${theme.animation.transition};
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 
-  &:hover {
+  &:hover, &.active {
     color: ${theme.colors.dark.accent.base};
   }
 `

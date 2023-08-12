@@ -2,18 +2,39 @@ import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
 import {S} from '../HeaderMenu_Styles'
 
-const menuDataItems = ["Кейсы", "Опыт", "CV", "Отзывы", "Контакты"];
-
+const menuItemsData = [
+    {
+        title: "Кейсы",
+        href: "works"
+    },
+    {
+        title: "Опыт",
+        href: "expirience"
+    },
+    {
+        title: "Отзывы",
+        href: "reviews"
+    },
+    {
+        title: "Контакты",
+        href: "contacts"
+    }
+]
 export const Menu: React.FC = () => {
     return (
         <ul role={'menu'} aria-label="Меню">
-            {menuDataItems.map(
-                (menuDataItems, index) => {
+            {menuItemsData.map(
+                (item, index) => {
                     return (
                         <li role="menuitem" key={index}>
-                            <S.MenuLink href="">
+                            <S.MenuLink
+                                activeClass="active"
+                                to={item.href}
+                                spy={true}
+                                smooth={true}
+                            >
                                 <Icon iconId={"star"}/>
-                                {menuDataItems}
+                                {item.title}
                             </S.MenuLink>
                         </li>
                     )

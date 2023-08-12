@@ -6,7 +6,7 @@ import {S} from '../main/Main_Styled';
 
 export const Main: React.FC = () => {
     return (
-        <S.Main>
+        <S.Main id={"main"}>
             <ContainerWrapper>
                 <S.MainWrapper>
                     <S.MainTitle>

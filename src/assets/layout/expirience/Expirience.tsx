@@ -6,7 +6,7 @@ import {S} from '../expirience/Expirience_Styles';
 
 export const Expirience: React.FC = () => {
     return (
-        <S.Expirience>
+        <S.Expirience id={"expirience"}>
             <S.ExpirienceWrapper>
                 <SectionTitle>
                     <span>Более 10 лет опыта</span> в области интерактивного дизайна и работы с талантливыми людьми в

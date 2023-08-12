@@ -23,7 +23,7 @@ const socialItemsData = [
 
 export const Contacts: React.FC = () => {
     return (
-        <S.Contacts>
+        <S.Contacts id={"contacts"}>
             <ContainerWrapper>
                 <SectionTitle>Контакты</SectionTitle>
                 <S.Form action="">

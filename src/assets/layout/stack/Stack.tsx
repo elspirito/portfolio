@@ -6,7 +6,7 @@ import {S} from '../stack/Stack_Styles'
 
 export const Stack: React.FC = () => {
     return (
-        <S.Stack>
+        <S.Stack id={"stack"}>
             <ContainerWrapper>
 
                 <S.Directions>

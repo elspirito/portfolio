@@ -8,7 +8,6 @@ import sberPreview from "../../images/projects/sber-preview.webp"
 import shb2Preview from "../../images/projects/shb2-preview.webp"
 import shbPreview from "../../images/projects/shb-preview.webp"
 import {ContainerWrapper} from "../../components/ContainerWrapper";
-import {Button} from "../../components/button/Button";
 import {S} from '../works/Works_Styles'
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {AnimatePresence, motion} from "framer-motion";
@@ -93,7 +92,7 @@ export const Works: React.FC = () => {
     }
 
     return (
-        <S.Works>
+        <S.Works id={"works"}>
             <ContainerWrapper>
                 <S.WorkTabsWrapper>
                     <WorkTabs tabsItems={tabsItemsData}

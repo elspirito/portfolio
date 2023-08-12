@@ -5,6 +5,8 @@ const Logo = styled.a`
   display: flex;
   align-items: center;
   gap: 24px;
+  cursor: pointer;
+  transition: ${theme.animation.transition};
 
   &:hover {
     color: ${theme.colors.dark.accent.base};

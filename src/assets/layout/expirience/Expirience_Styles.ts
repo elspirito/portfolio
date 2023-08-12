@@ -9,7 +9,7 @@ const ExpirienceWrapper = styled.div`
   overflow: hidden;
   padding: 64px;
   border-radius: 24px;
-  max-width: 1440px;
+  max-width: 1520px;
   margin: 0 auto;
   
   span{
@@ -17,7 +17,7 @@ const ExpirienceWrapper = styled.div`
   }
 `
 const SkillMap = styled.img`
-  width: 1392px;
+  max-width: 1392px;
 `
 
 export const S = {

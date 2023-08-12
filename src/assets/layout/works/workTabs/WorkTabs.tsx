@@ -15,9 +15,9 @@ export const WorkTabs = (props: TabsPropsType) => {
                     (t, index) => {
                         return (
                             <li key={index}>
-                                <S.Link active={props.currentFilterStatus === t.status} as={"button"} onClick={() => {
+                                <S.TabLink active={props.currentFilterStatus === t.status} as={"button"} onClick={() => {
                                     props.changeFilterStatus(t.status)
-                                }}>{t.title}</S.Link>
+                                }}>{t.title}</S.TabLink>
                             </li>
                         )
                     }
