@@ -1,18 +1,19 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {motion} from "framer-motion";
 
-const Expirience = styled.section`
-
+const Expirience = styled(motion.section)`
+  background-color: ${theme.colors.dark.secondaryBg};
 `
 const ExpirienceWrapper = styled.div`
-  background-color: ${theme.colors.dark.secondaryBg};
+
   overflow: hidden;
   padding: 64px;
   border-radius: 24px;
   max-width: 1520px;
   margin: 0 auto;
-  
-  span{
+
+  span {
     color: ${theme.colors.dark.accent.base};
   }
 `
